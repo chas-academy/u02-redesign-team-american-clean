@@ -1,0 +1,111 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.topHeader {
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  position: fixed;
+  width: 100vw;
+}
+
+.topHeader img {
+  left: 1em;
+  float: left;
+}
+
+.navSticky {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding: 2vw;
+  width: 70vw;
+  margin-right: auto;
+}
+
+.navItem {
+  list-style-type: none;
+  background-color: inherit;
+  text-align: center;
+}
+
+.navItem:last-child a::after {
+  content: '';
+  background-color: transparent;
+}
+
+.navItem a {
+  white-space: nowrap;
+  color: white;
+  text-decoration: none;
+  padding: 1vw 1vw 0.3vw 1vw;
+  -webkit-transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.navItem a::after {
+  content: '';
+  background-color: yellow;
+  padding-left: 1px;
+  margin-left: 1vw;
+}
+
+.navItem a:hover {
+  color: yellow;
+  border-bottom: 3px solid yellow;
+  -webkit-transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
+}
+
+#banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+}
+
+#banner label {
+  margin-left: auto;
+}
+
+#banner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: auto;
+}
+
+.bigbody {
+  border: 1px solid black;
+  height: 150vh;
+  width: 90vw;
+  margin-top: 10vh;
+  text-align: center;
+}
+/*# sourceMappingURL=headerStyle.css.map */
