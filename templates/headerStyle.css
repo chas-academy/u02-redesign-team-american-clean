@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -17,14 +19,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: black;
+  background-color: darkgray;
   position: fixed;
   width: 100vw;
+  height: 75px;
 }
 
 .topHeader img {
   left: 1em;
-  float: left;
+  position: fixed;
+  width: 15vw;
+  left: 5px;
+  top: 10px;
+  /*adjust height and width*/
 }
 
 .navSticky {
@@ -38,10 +45,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
-  padding: 2vw;
+  /*padding: 2vw;*/
   width: 70vw;
-  margin-right: auto;
+  height: 75px;
 }
 
 .navItem {
@@ -51,7 +61,7 @@ body {
 }
 
 .navItem:last-child a::after {
-  content: '';
+  content: "";
   background-color: transparent;
 }
 
@@ -59,17 +69,16 @@ body {
   white-space: nowrap;
   color: white;
   text-decoration: none;
-  padding: 1vw 1vw 0.3vw 1vw;
+  padding: 0.5vw 0.8vw 0.15vw 0.8vw;
   -webkit-transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
   transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
   border-bottom: 3px solid transparent;
-}
-
-.navItem a::after {
-  content: '';
-  background-color: yellow;
-  padding-left: 1px;
-  margin-left: 1vw;
+  /*&::after {
+      content: "";
+      background-color: yellow;
+      padding-left: 1px;
+      margin-left: 1vw;
+    }*/
 }
 
 .navItem a:hover {
@@ -79,11 +88,17 @@ body {
   transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
 }
 
+[type="search"] {
+  height: 30px;
+}
+
 #banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
+  height: 40px;
+  margin-top: 80px;
 }
 
 #banner label {
@@ -98,7 +113,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+}
+
+#banner ul a {
+  color: black;
+  padding: 0.5vw 0.8vw 0.15vw 0.8vw;
+}
+
+#banner button {
+  height: 30px;
+  width: 60px;
 }
 
 .bigbody {
@@ -107,5 +133,45 @@ body {
   width: 90vw;
   margin-top: 10vh;
   text-align: center;
+}
+
+#hamburger,
+#ham-check {
+  display: none;
+}
+
+@media only screen and (max-width: 930px) {
+  .navSticky {
+    display: none;
+    color: black;
+    background-color: black;
+    position: absolute;
+    top: 75px;
+    right: 15vw;
+    height: initial;
+  }
+  .navSticky li {
+    margin: 0.5vh;
+  }
+  #hamburger {
+    display: inline-block;
+    margin-left: auto;
+    font-size: 3em;
+    margin-right: 2vw;
+    color: yellow;
+  }
+  #ham-check:checked ~ .navSticky {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #banner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=headerStyle.css.map */
