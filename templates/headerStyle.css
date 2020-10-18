@@ -31,6 +31,8 @@ body {
   width: 15vw;
   left: 5px;
   top: 10px;
+  max-height: 70px;
+  max-width: 260px;
   /*adjust height and width*/
 }
 
@@ -94,6 +96,7 @@ body {
 }
 
 #smalllogo {
+  max-height: 70px;
   display: none;
 }
 
