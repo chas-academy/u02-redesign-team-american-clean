@@ -14,7 +14,7 @@ body {
   top: 0;
   display: flex;
   justify-content: center;
-  background-color: darkgray;
+  background-color: black;
   position: fixed;
   width: 100vw;
   height: 75px;
@@ -54,6 +54,7 @@ body {
     color: white;
     text-decoration: none;
     padding: $padding-horiz;
+    background: linear-gradient(150deg, rgb(0, 0, 0), rgb(54, 46, 46));
     transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
     border-bottom: 3px solid transparent;
     /*&::after {
@@ -71,6 +72,9 @@ body {
 }
 [type="search"] {
   height: 30px;
+}
+#smalllogo {
+  display: none;
 }
 #banner {
   display: flex;
@@ -106,6 +110,16 @@ body {
 #ham-check {
   display: none;
 }
+@media only screen and (max-width: 1100px) {
+  #smalllogo {
+    display: inline-block;
+    height: 4vw;
+    width: 9.6vw;
+  }
+  #biglogo {
+    display: none;
+  }
+}
 @media only screen and (max-width: 930px) {
   .navSticky {
     display: none;
@@ -118,6 +132,13 @@ body {
     li {
       margin: 0.5vh;
     }
+  }
+  #smalllogo {
+    display: none;
+  }
+  #biglogo {
+    display: inline-block;
+    width: 250px;
   }
   #hamburger {
     display: inline-block;
