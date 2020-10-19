@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/061e52cdfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!--header, banner and breadcrumbs-->
     <!---->
     <main>
-        <article>
-            <h1>Lagar, regler, tillsyn</h1>
-            <img src="#" alt="Lag-symbol">
-            <p>För alla utbildningsformer finns det lagar och andra bestämmelser som måste följas. Det gäller till
-                exempel hur utbildningarna ska utformas, kursplaner, betygskriterier, examina, tillträde och avgifter
-            </p>
-            <p>
-                Här hittar du de <a href="#">lagar och förordningar</a> som reglerar de utbildningsformer som
-                Myndigheten för yrkeshögskolan ansvarar för. Här finns även de <a href="#">föreskrifter</a> som vi har
-                beslutat om, samt de allmäna råd vi har gett ut.
-            </p>
-            <p>
-                Genom <a href="#">tillsyn</a> kontrollerar myndigheten att utbildningarna följer de lagar och regler som
-                gäller. I menyn till höger kan du läsa om hur tillsynen går till och hitta tillsynsbeslut.
-            </p>
-            <p>
-                Om du anser att det finns brister i en utbildning kan du anmäla det till oss. <a href="#">Anmäl brister
-                    i en utbildning.</a>
-            </p>
-            <aside>
-                <section>
-                    <h3>
-                        Lagar, regler, tillsyn
-                    </h3>
-                    <ul>
-                        <li><a href="#">Lagar och förordningar</a></li>
-                        <li><a href="#">Gällande föreskrifter</a></li>
-                        <li><a href="#">Allmäna råd</a></li>
-                        <li><a href="#">Tillsyn</a></li>
-                        <li><a href="#">Kvalitetsgranskning</a></li>
-                        <li><a href="#">Anmäl brister i en utbildning</a></li>
-                    </ul>
-                </section>
-                <!-- style the link below as a button?-->
-                <a href="#">Anmäl brister i en utbildning</a>
-                <section>
-                    <h4>Dela</h4>
-                    <ul>
-                        <!--fill with font-awesome icons-->
-                        <li><i></i></li>
-                        <li><i></i></li>
-                        <li><i></i></li>
-                    </ul>
-                </section>
-            </aside>
-        </article>
+      <article class="grid grid-gap">
+        <section class="col-2-3 card">
+          <h1>Lagar, regler, tillsyn</h1>
+          <div class="img-container">
+            <img
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FIllustrationer%2FParagraf.png&width=584&height=0&method=Box"
+              alt="Lag-symbol"
+            />
+          </div>
+          <p>
+            För alla utbildningsformer finns det lagar och andra bestämmelser
+            som måste följas. Det gäller till exempel hur utbildningarna ska
+            utformas, kursplaner, betygskriterier, examina, tillträde och
+            avgifter
+          </p>
+          <p>
+            Här hittar du de <a href="#">lagar och förordningar</a> som reglerar
+            de utbildningsformer som Myndigheten för yrkeshögskolan ansvarar
+            för. Här finns även de <a href="#">föreskrifter</a> som vi har
+            beslutat om, samt de allmäna råd vi har gett ut.
+          </p>
+          <p>
+            Genom <a href="#">tillsyn</a> kontrollerar myndigheten att
+            utbildningarna följer de lagar och regler som gäller. I menyn till
+            höger kan du läsa om hur tillsynen går till och hitta
+            tillsynsbeslut.
+          </p>
+          <p>
+            Om du anser att det finns brister i en utbildning kan du anmäla det
+            till oss. <a href="#">Anmäl brister i en utbildning.</a>
+          </p>
+        </section>
+        <aside class="col1">
+          <section class="link-list card">
+            <h3>Lagar, regler, tillsyn</h3>
+            <ul>
+              <li><a href="#">Lagar och förordningar</a></li>
+              <li><a href="#">Gällande föreskrifter</a></li>
+              <li><a href="#">Allmäna råd</a></li>
+              <li><a href="#">Tillsyn</a></li>
+              <li><a href="#">Kvalitetsgranskning</a></li>
+              <li><a href="#">Anmäl brister i en utbildning</a></li>
+            </ul>
+          </section>
+          <!-- style the link below as a button?-->
+          <a href="#" class="call-to-action card"
+            >Anmäl brister i en utbildning</a
+          >
+          <section class="icons card">
+            <h4>Dela</h4>
+            <ul>
+              <!--fill with font-awesome icons-->
+              <li><i class="fab fa-facebook-f"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="far fa-envelope"></i></li>
+            </ul>
+          </section>
+        </aside>
+      </article>
     </main>
-</body>
-
+  </body>
 </html>
