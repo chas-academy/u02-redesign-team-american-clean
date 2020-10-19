@@ -1,0 +1,31 @@
+$grid-gap: 40px;
+$breakpoint: 999px;
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .col-2-3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+.grid.gap {
+    grid-gap: $grid-gap;
+}
+
+.grid div {
+    border: 1px solid yellowgreen;  /* For testing */
+}
+
+@media screen and (max-width: $breakpoint) {
+    .grid {
+        grid-template-columns: auto;
+
+        .col-2-3 {
+            grid-column-start: auto;
+            grid-column-end: auto;
+        }
+    }
+}
