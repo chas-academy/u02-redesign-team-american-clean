@@ -15,11 +15,6 @@
   grid-gap: 40px;
 }
 
-.grid div {
-  border: 1px solid yellowgreen;
-  /* For testing */
-}
-
 @media screen and (max-width: 999px) {
   .grid {
     -ms-grid-columns: auto;
