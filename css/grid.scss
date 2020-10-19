@@ -1,3 +1,6 @@
+$grid-gap: 40px;
+$breakpoint: 999px;
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9,14 +12,14 @@
 }
 
 .grid.gap {
-    grid-gap: 40px;
+    grid-gap: $grid-gap;
 }
 
 .grid div {
     border: 1px solid yellowgreen;  /* For testing */
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: $breakpoint) {
     .grid {
         grid-template-columns: auto;
 
