@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+body,
+html {
+  width: 100vw;
+}
+
+.topHeader {
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  position: fixed;
+  width: 100vw;
+  height: 75px;
+}
+
+.topHeader img {
+  left: 1em;
+  position: fixed;
+  width: 15vw;
+  top: 10px;
+  max-height: 70px;
+  max-width: 260px;
+  /*adjust height and width*/
+}
+
+.navSticky {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  /*padding: 2vw;*/
+  width: 70vw;
+  height: 75px;
+}
+
+.navItem {
+  list-style-type: none;
+  background-color: inherit;
+  text-align: center;
+}
+
+.navItem:last-child a::after {
+  content: "";
+  background-color: transparent;
+}
+
+.navItem a {
+  white-space: nowrap;
+  color: white;
+  text-decoration: none;
+  padding: 0.5vw 0.8vw 0.15vw 0.8vw;
+  margin: 0.2vw;
+  background: linear-gradient(150deg, black, #252020);
+  -webkit-transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
+  border-bottom: 2px solid black;
+  /*&::after {
+      content: "";
+      background-color: yellow;
+      padding-left: 1px;
+      margin-left: 1vw;
+    }*/
+}
+
+.navItem a:hover {
+  color: yellow;
+  border-bottom: 2px solid yellow;
+  -webkit-transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
+}
+
+[type="search"] {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+#smalllogo {
+  max-height: 70px;
+  display: none;
+}
+
+#breadcrumbs p a::after {
+  content: " > ";
+  color: black;
+}
+
+#breadcrumbs p a:last-child::after {
+  content: "";
+}
+
+#banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  margin: 80px 0px 0px 0px;
+  border-bottom: 1px solid black;
+  padding-left: 0px;
+}
+
+#banner label {
+  margin-left: auto;
+}
+
+#banner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: auto;
+  list-style-type: none;
+}
+
+#banner ul a {
+  color: black;
+  padding: 0.5vw 0.8vw 0.15vw 0.8vw;
+}
+
+#banner button {
+  height: 30px;
+  width: 60px;
+}
+
+.bigbody {
+  border: 1px solid black;
+  height: 150vh;
+  width: 90vw;
+  margin: 10vh 0px 0px 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+#hamburger,
+#ham-check {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  #smalllogo {
+    display: inline-block;
+    height: 4vw;
+    width: 9.6vw;
+  }
+  #biglogo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .navSticky {
+    display: none;
+    color: black;
+    background-color: black;
+    position: absolute;
+    top: 75px;
+    right: 15vw;
+    height: initial;
+  }
+  .navSticky li {
+    margin: 0.5vh;
+  }
+  #smalllogo {
+    display: none;
+  }
+  #biglogo {
+    display: inline-block;
+    width: 250px;
+  }
+  #hamburger {
+    display: inline-block;
+    margin-left: auto;
+    font-size: 3em;
+    margin-right: 2vw;
+    color: yellow;
+  }
+  #ham-check:checked ~ .navSticky {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #banner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=headerStyle.css.map */
