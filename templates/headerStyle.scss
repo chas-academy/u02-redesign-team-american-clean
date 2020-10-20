@@ -10,8 +10,16 @@ $padding-horiz: 0.5vw 0.8vw 0.15vw 0.8vw;
 body {
   font-family: sans-serif;
 }
+body,
+html {
+  width: 100vw;
+}
+
 .topHeader {
   top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   background-color: black;
@@ -23,7 +31,6 @@ body {
     left: 1em;
     position: fixed;
     width: 15vw;
-    left: 5px;
     top: 10px;
     max-height: 70px;
     max-width: 260px;
@@ -56,9 +63,10 @@ body {
     color: white;
     text-decoration: none;
     padding: $padding-horiz;
-    background: linear-gradient(150deg, rgb(0, 0, 0), rgb(54, 46, 46));
+    margin: 0.2vw;
+    background: linear-gradient(150deg, rgb(0, 0, 0), rgb(37, 32, 32));
     transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
     /*&::after {
       content: "";
       background-color: yellow;
@@ -68,22 +76,37 @@ body {
   }
   a:hover {
     color: yellow;
-    border-bottom: 3px solid yellow;
+    border-bottom: 2px solid yellow;
     transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
   }
 }
 [type="search"] {
   height: 30px;
+  margin-bottom: 5px;
 }
 #smalllogo {
   max-height: 70px;
   display: none;
 }
+#breadcrumbs {
+  p {
+    a {
+      &::after {
+        content: " > ";
+        color: black;
+      }
+      &:last-child::after {
+        content: "";
+      }
+    }
+  }
+}
 #banner {
   display: flex;
   width: 100vw;
-  height: 40px;
-  margin-top: 80px;
+  margin: 80px 0px 0px 0px;
+  border-bottom: 1px solid black;
+  padding-left: 0px;
   label {
     margin-left: auto;
   }
@@ -106,8 +129,9 @@ body {
   border: 1px solid black;
   height: 150vh;
   width: 90vw;
-  margin-top: 10vh;
+  margin: 10vh 0px 0px 0px;
   text-align: center;
+  display: inline-block;
 }
 #hamburger,
 #ham-check {

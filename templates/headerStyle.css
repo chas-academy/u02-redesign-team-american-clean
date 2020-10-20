@@ -11,8 +11,16 @@ body {
   font-family: sans-serif;
 }
 
+body,
+html {
+  width: 100vw;
+}
+
 .topHeader {
   top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +37,6 @@ body {
   left: 1em;
   position: fixed;
   width: 15vw;
-  left: 5px;
   top: 10px;
   max-height: 70px;
   max-width: 260px;
@@ -72,10 +79,11 @@ body {
   color: white;
   text-decoration: none;
   padding: 0.5vw 0.8vw 0.15vw 0.8vw;
-  background: linear-gradient(150deg, black, #362e2e);
+  margin: 0.2vw;
+  background: linear-gradient(150deg, black, #252020);
   -webkit-transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
   transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid black;
   /*&::after {
       content: "";
       background-color: yellow;
@@ -86,13 +94,14 @@ body {
 
 .navItem a:hover {
   color: yellow;
-  border-bottom: 3px solid yellow;
+  border-bottom: 2px solid yellow;
   -webkit-transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
   transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
 }
 
 [type="search"] {
   height: 30px;
+  margin-bottom: 5px;
 }
 
 #smalllogo {
@@ -100,13 +109,23 @@ body {
   display: none;
 }
 
+#breadcrumbs p a::after {
+  content: " > ";
+  color: black;
+}
+
+#breadcrumbs p a:last-child::after {
+  content: "";
+}
+
 #banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  height: 40px;
-  margin-top: 80px;
+  margin: 80px 0px 0px 0px;
+  border-bottom: 1px solid black;
+  padding-left: 0px;
 }
 
 #banner label {
@@ -139,8 +158,9 @@ body {
   border: 1px solid black;
   height: 150vh;
   width: 90vw;
-  margin-top: 10vh;
+  margin: 10vh 0px 0px 0px;
   text-align: center;
+  display: inline-block;
 }
 
 #hamburger,
