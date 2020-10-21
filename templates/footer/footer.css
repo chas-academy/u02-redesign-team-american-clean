@@ -10,9 +10,10 @@ html {
   grid-template-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 1em;
-  position: absolute;
+  margin-top: 1em;
+  /* position: absolute;
   bottom: 0;
-  width: 100vw;
+  width: 100vw; */
 }
 .footer > section {
   position: relative;
@@ -26,7 +27,7 @@ html {
   background-color: black;
   width: 90%;
   height: 3px;
-  top: 0;
+  top: -5px;
   left: 0;
 }
 
