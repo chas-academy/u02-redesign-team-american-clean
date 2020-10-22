@@ -13,7 +13,10 @@
 
 .grid.gap {
   grid-gap: 40px;
+<<<<<<< HEAD
   margin-bottom: 40px;
+=======
+>>>>>>> css-grid
 }
 
 @media screen and (max-width: 999px) {

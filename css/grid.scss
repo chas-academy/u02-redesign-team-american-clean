@@ -14,7 +14,10 @@ $breakpoint: 999px;
 
 .grid.gap {
     grid-gap: $grid-gap;
+<<<<<<< HEAD
     margin-bottom: $grid-gap;
+=======
+>>>>>>> css-grid
 }
 
 @media screen and (max-width: $breakpoint) {

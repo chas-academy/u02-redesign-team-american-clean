@@ -1,8 +1,52 @@
+/* Color palette https://coolors.co/1446a0-db3069-f5d547-ebebd3-3c3c3b */ 
 @import url("grid.css");
 
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 100%;
 }
+=======
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    background: #EBEBD3;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+}
+
+.sidebar, .share {
+    padding: 15px;
+    color: #fff;
+}
+
+.sidebar {
+    background: #1446A0;
+}
+
+.share {
+    background: #DB3069;
+}
+
+.post-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-list li {
+    padding: 15px;
+    background: #F5D547;
+    color: #fff;
+    margin-bottom: 15px;
+}
+>>>>>>> css-grid
