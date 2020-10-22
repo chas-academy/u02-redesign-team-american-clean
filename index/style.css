@@ -1,0 +1,22 @@
+.current-events {
+}
+body,
+html {
+  max-width: 100vw;
+}
+main {
+  width: 90vw;
+  margin: 0 auto;
+}
+.grid .col-2-3.apply {
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 999px) {
+  .grid .col-2-3.apply {
+    grid-template-columns: auto;
+    grid-column-start: 1;
+  }
+}
