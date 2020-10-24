@@ -1,0 +1,97 @@
+/* Color palette https://coolors.co/1446a0-db3069-f5d547-ebebd3-3c3c3b */ 
+
+$btn-default: #3C3C3B;
+$btn-primary: #F5D547;
+$btn-font-color: #fff;
+
+.button {
+    background: $btn-default;
+    color: $btn-font-color;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+
+    &:hover {
+        background: darken($color: $btn-default, $amount: 10%);
+    }
+}
+
+.button.primary {
+    background: $btn-primary;
+
+    &:hover {
+        background: darken($color: $btn-primary, $amount: 10%);
+    }
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+}
+
+.sidebar, .share {
+    padding: 15px;
+    color: #fff;
+}
+
+.sidebar {
+    background: #1446A0;
+}
+
+.share {
+    background: #DB3069;
+}
+
+.post-list li {
+    padding: 15px;
+    background: #F5D547;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.hero-img {
+    background: url(../index/bricks-2181920_1280.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin: 0;
+        font-size: 3.5em;
+        color: #fff;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+.page-nav li {
+    margin: 20px;
+
+    &:before {
+        /* https://stackoverflow.com/questions/20782368/use-font-awesome-icon-as-css-content */ 
+        font-family: "Font Awesome 5 Free";
+        content: "\f054";
+        display: inline-block;
+        padding-right: 5px;
+        vertical-align: middle;
+        font-weight: 900;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+
+
