@@ -1,0 +1,62 @@
+body{
+    text-align:center;
+    background-color:gainsboro;
+}
+
+section{
+    border: 2px solid black;
+    background-color:gold;
+    border-radius: 5px;
+    box-shadow:4px 4px gray;
+    padding:10px;
+}
+
+.darkSec{
+    color: black;
+    background-color:white;
+    margin-bottom: 1vh;
+    box-shadow:none;
+}
+
+.card{
+    border:1px solid black;
+    margin-bottom:1vh;
+    margin-top:1vh;
+    background-color:green;
+    border-radius: 5px;
+    box-shadow:4px 4px gray;
+}
+
+
+
+@media screen and (min-width:801px){
+    #map{
+        width:50vw;
+        float:left;
+    }
+
+    .sideSet {
+
+        display:flex;
+        align-content: flex-end;
+        flex-direction:column;
+        max-width:40vw;
+        margin-top:4vh;
+
+    }
+    .twoByTwo{
+        display:flex;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap:wrap;
+        border:0px solid black;
+        
+    }
+    
+    .twoByTwo section{
+            width:20vw;
+            box-shadow:4px 4px gray;
+    }
+}
