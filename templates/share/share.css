@@ -1,0 +1,25 @@
+.icons {
+  border: 1px solid #464646;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+.icons h4 {
+  text-align: center;
+  font-size: 1.1em;
+  border-bottom: 1px solid grey;
+  margin: 0;
+}
+
+.icons ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.icons ul li {
+  display: inline-block;
+}
+/*# sourceMappingURL=share.css.map */
