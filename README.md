@@ -1,4 +1,34 @@
 ﻿# u02-redesign-team-american-clean
+
+## Hero image
+```
+  <div class="hero-img">
+      <h1>Välkommen till myh.se!</h1>
+
+      <a href="#" class="button primary">Våra verksamhetsområden</a>
+    </div>
+```
+
+## Buttons 
+Two button designs, default style:
+```
+<a href="#" class="button">Våra verksamhetsområden</a>
+```
+
+Primary button: Add `.primary`.
+
+## Simple page submenu
+```
+ <ul class="page-nav">
+            <li><a href="#">Yrkeshögskoleutbildning</a></li>
+            <li><a href="#">Konst- och kulturutbildning</a></li>
+            <li><a href="#">Tolkutbildning</a></li>
+            <li><a href="#">Utbildning med endast tillsyn</a></li>
+ </ul>
+```
+
+
+## Grid
 The grid is based on three equal columns without space default. 
 
 Use the grid class as wrapper element.

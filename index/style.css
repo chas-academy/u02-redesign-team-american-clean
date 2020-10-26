@@ -113,6 +113,7 @@ main.grid {
   border-radius: 7px;
   box-shadow: 1px 1px 4px darkslategrey;
 }
+
 @media only screen and (max-width: 999px) {
   .grid .col-2-3.apply {
     grid-template-columns: auto;
@@ -121,6 +122,11 @@ main.grid {
   .current-events.card {
     margin: 0 2em;
   }
+  /* .calendar.card {
+    margin-left: 37vw;
+  } */
+
+
   .links {
     flex-direction: column;
     text-align: center;

@@ -1,52 +1,50 @@
 /* Color palette https://coolors.co/1446a0-db3069-f5d547-ebebd3-3c3c3b */ 
 @import url("grid.css");
+@import url("components.css");
 
-<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 100%;
 }
-=======
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 100%;
-}
 
 body {
     background: #EBEBD3;
 }
 
-.card {
-    background: #fff;
-    padding: 15px;
+main {
+    margin: 40px;
 }
 
-.sidebar, .share {
-    padding: 15px;
-    color: #fff;
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 5px;
 }
 
-.sidebar {
-    background: #1446A0;
+p {
+    margin: 10px 0 10px 0;
 }
 
-.share {
-    background: #DB3069;
+h1 {
+    font-size: 36px;
 }
 
-.post-list {
-    list-style-type: none;
-    padding: 0;
+h2 {
+    font-size: 30px;
 }
 
-.post-list li {
-    padding: 15px;
-    background: #F5D547;
-    color: #fff;
-    margin-bottom: 15px;
+h3 {
+    font-size: 24px;
 }
->>>>>>> css-grid
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
