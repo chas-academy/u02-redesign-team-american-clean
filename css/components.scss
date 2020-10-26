@@ -41,6 +41,12 @@ $btn-font-color: #fff;
 
 .share {
     background: #DB3069;
+    font-weight: bold;
+
+    .icons-row {
+        font-size: 24px;
+        float: right;
+    }
 }
 
 .post-list li {
@@ -51,7 +57,7 @@ $btn-font-color: #fff;
 }
 
 .hero-img {
-    background: url(../index/bricks-2181920_1280.jpg) no-repeat fixed;
+    background: url(../index/bricks-2181920_1280.jpg) no-repeat fixed center;
     background-size: cover;
     height: 80vh;
     width: 100vw;
