@@ -1,0 +1,23 @@
+.icons {
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  border-radius: 7px;
+  box-shadow: 1px 1px 4px darkslategrey;
+  h4 {
+    text-align: center;
+    font-size: 1.1em;
+    border-bottom: 1px solid grey;
+    margin: 0;
+  }
+  ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    li {
+      display: inline-block;
+    }
+  }
+}
