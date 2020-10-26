@@ -2,17 +2,39 @@ article {
   display: flex;
   flex-direction: column;
   min-height: 200px;
-  border: 1px solid rgb(197, 197, 197);
+  max-width: 100%;
+
   margin: 0.5em;
   padding: 1em;
-  width: 90%;
+  align-items: center;
 }
-/* article h4 {
-  font-size: 1.2em;
-} */
+
 article span {
   margin-top: auto;
+  text-align: left;
+  width: 100%;
 }
+article h4 {
+  width: 100%;
+  text-align: left;
+}
+.current-events {
+  grid-area: current;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  grid-area: links;
+}
+
+.otherlinks {
+  grid-column-start: 2;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .current-events > section {
   /* THIS IS THE POSTS GRID, SHOULD BE WIDER ALSO SHOULD BE RESPONSIVE HAHA */
   max-width: 70vw;
@@ -21,9 +43,8 @@ article span {
   grid-template-rows: auto;
 }
 .thumbnail {
-  min-height: 100px;
-  max-height: 100px;
-  /* max-width: 80%; */
+  height: 10vw;
+  width: 18vw;
   filter: grayscale(50%);
   margin: 0.5em 0 1em 0;
   z-index: 1;
@@ -31,7 +52,26 @@ article span {
 /* GET THIS CENTERRED ALONG WITH OTHER CARDS NEXT? */
 /* STYLE IN A ROW WITH ICONS */
 .calendar.card {
-  max-height: 300px;
+  max-height: 400px;
+  grid-area: calendar;
+}
+.calendar.card section {
+  display: flex;
+  flex-direction: column;
+}
+.month {
+  padding: 0.5em;
+}
+.month ul {
+  list-style-type: none;
+}
+.month h4 {
+  border-bottom: 2px solid black;
+  margin: 0 0 0.5em 0;
+}
+.month span {
+  font-size: 2em;
+  padding-right: 0.5em;
 }
 body,
 html {
@@ -41,8 +81,25 @@ main {
   max-width: 100vw;
   margin: 0 auto;
 }
+.grid.index {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px auto;
+  min-height: 100vh;
+  grid-template-areas: ". links links links ." "calendar current current current .";
+}
 main.grid {
   max-width: 100vw;
+}
+.links > .card {
+  margin: 0.5em;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding-top: 1.2em;
 }
 .grid .col-2-3.apply {
   grid-column-start: 1;
@@ -61,13 +118,47 @@ main.grid {
   .grid .col-2-3.apply {
     grid-template-columns: auto;
   }
+  /* FIX THIS */
   .current-events.card {
     margin: 0 2em;
-    grid-column-end: 4;
-    grid-column-start: 1;
   }
   /* .calendar.card {
     margin-left: 37vw;
   } */
 
+
+  .links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .grid.index {
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "links links links links links" ". calendar calendar calendar ." ". current current current .";
+  }
+  .calendar.card section {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .month {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .current-events > section {
+    grid-template-columns: 1fr;
+    margin-right: 0px;
+    min-width: 80vw;
+  }
+  .grid.index {
+    grid-template-areas: "links links links links links" "calendar calendar calendar calendar calendar" "current current current current current";
+  }
+  article {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .thumbnail {
+    width: 100%;
+    height: 50%;
+  }
 }
