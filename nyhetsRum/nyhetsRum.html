@@ -1,95 +1,231 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nyhetsrum - MYH</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/templates/footer/footer.css"/>
+    <link rel="stylesheet" href="/templates/header/headerStyle.css"/>
 </head>
+
 <body>
-    <h1>Nyhetsrum</h1>
-    <p>Välkommen till vårt nyhetsrum. Här hittar du nyheter och 
-        pressmeddelanden, bilder, filmer, kalendarium och annan 
-        aktuell information.</p>
+    <header class="topHeader">
+        <img id="biglogo" src="/templates/header/myh_logo_white_big_shaded.png">
+        <img id="smalllogo"src="/templates/header/myh_logo_white_big_shaded_small.png">
+              <label for="ham-check" id="hamburger">&#9776</label>
+        <input type="checkbox" name="ham-check" id="ham-check">
+        <ul class="navSticky">
+          <li class="navItem"><a href="index.html">Start</a></li>
+          <li class="navItem"><a href="omOss.html">Om oss</a></li>
+          <li class="navItem">
+            <a href="verksamhetsOmraden.html">Verksamhetsområden</a>
+          </li>
+          <li class="navItem">
+            <a href="lagarReglerTillsyn.html">Lagar, Regler, Tillsyn</a>
+          </li>
+          <li class="navItem"><a href="statistik.html">Statistik</a></li>
+          <li class="navItem"><a href="publikationer.html">Publikationer</a></li>
+          <li class="navItem"><a href="nyhetsrum.html">Nyhetsrum</a></li>
+          <li class="navItem"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </header>
+      <div role="banner" id="banner">
+        <ul>
+          <li><a href="#">In English</a></li>
+          <li><a href="#">Lättläst</a></li>
+          <li><a href="#">Anpassa</a></li>
+          <li><a href="#">Mina sidor</a></li>
+        </ul>
+        <div>
+        <label for="searchField"><i></i></label>
+        <input type="search" name="searchField" placeholder="Ange sökord" />
+        <button type="submit">Sök</button>
+        </div>
+      </div>
+      <div id="breadcrumbs">
+        <p>
+          <a href="#">Start</a>
+          <a href="#">Nästa </a>
+          <a href="#">Nästa </a>
+          <a href="#">Nästa </a>
+          <a href="#">Nästa </a>
+        </p>
+      </div>
+    <div class="grid gap">
+        <div class="col-2-3">
+            <article class="card">
+                <h1>Nyhetsrum</h1>
+                <p>Välkommen till vårt nyhetsrum. Här hittar du nyheter och 
+                    pressmeddelanden, bilder, filmer, kalendarium och annan 
+                    aktuell information.</p>
+            </article>
 
-        <header>
-            <button>Aktuellt</button>
-            <button>Pressmeddelanden</button>
-            <button>Kalender</button>
-     </header>
-
-            <section>
-                <h2>Marknadsför YH-utbildningar som möjliga 
+            <ul class="post-list">
+                <li>
+                    <h2>Marknadsför YH-utbildningar som möjliga 
                     uppdragsutbildningar</h2>
-                <p>Du som anordnare har nu möjlighet att göra 
-                    en intresseanmälan om att erbjuda uppdragsutbildning 
-                    baserat på redan beviljade utbildningar, kurser och 
-                    kurspaket inom yrkeshögskolan. Myndigheten kommer att 
-                    synliggöra utbudet på bland annat yrkeshogskolan.se 
-                    för potentiella uppdragsgivare som företag, fackförbund 
-                    och omställningsorganisationer.</p>
-
-                <h2>Webbinarium: Studerandestöd</h2>
-                <p>Hur utformar vi ett bra studerandestöd när vi inte möts på 
-                    plats? Omställningen till distansundervisning har skapat 
-                    nya utmaningar när det gäller studerandestöd. 
-                    De som tidigare inte har haft svårt att ta till sig 
-                    undervisningen kan behöva stöd när studiesituationen 
-                    förändras och ställer nya krav på struktur, uppmärksamhet 
-                    och rutiner.</p>
-
-                <h2>Rekordmånga ansökningar om att bedriva YH-utbildning</h2>
-                <p>Myndigheten för yrkeshögskolan (MYH) har fått in fler 
-                    ansökningar om att bedriva YH-utbildning än någonsin 
-                    tidigare. De 1482 ansökningarna innebär en 35 procentig 
-                    ökning jämfört med i fjol. </p>
-
-                <h2>Storsatsning på data/IT när yrkeshögskolan växer</h2>
-                <p>Idag presenterar Myndigheten för yrkeshögskolan de nya 
-                utbildningar som beviljats att starta från och med hösten 
-                2019. Av de närmare 500 nya YH-utbildningarna som beviljats 
-                är var femte inom data/IT.</p>
-
-                <h2>Lokförare – populäraste YH-utbildningen</h2>
-                <p>Söktrycket till yrkeshögskolan (YH) har de senaste åren 
-                ökat stadigt. Utbildningen med allra flest antal behöriga 
-                sökande per plats är lokförarutbildningen.</p>
-
+                    <p>Ämne: Akutellt</p>
+                    <p>Du som anordnare har nu möjlighet att göra 
+                        en intresseanmälan om att erbjuda uppdragsutbildning 
+                        baserat på redan beviljade utbildningar, kurser och 
+                        kurspaket inom yrkeshögskolan. Myndigheten kommer att 
+                        synliggöra utbudet på bland annat yrkeshogskolan.se 
+                        för potentiella uppdragsgivare som företag, fackförbund 
+                        och omställningsorganisationer.</p>
+                </li>
+                <li>
+                    <h2>Webbinarium: Studerandestöd</h2>
+                    <p>Ämne: Aktuellt</p>
+                    <p>Hur utformar vi ett bra studerandestöd när vi inte möts på 
+                        plats? Omställningen till distansundervisning har skapat 
+                        nya utmaningar när det gäller studerandestöd. 
+                        De som tidigare inte har haft svårt att ta till sig 
+                        undervisningen kan behöva stöd när studiesituationen 
+                        förändras och ställer nya krav på struktur, uppmärksamhet 
+                        och rutiner.</p>
+                </li>
+                <li>
+                    <h2>Storsatsning på data/IT när yrkeshögskolan växer</h2>
+                    <p>Ämne: Pressmeddelande</p>
+                    <p>Idag presenterar Myndigheten för yrkeshögskolan de nya 
+                        utbildningar som beviljats att starta från och med hösten 
+                        2019. Av de närmare 500 nya YH-utbildningarna som beviljats 
+                        är var femte inom data/IT.</p>
+                </li>
+                </li>
+                <li>
                 <h2>Platser kvar på många YH-utbildningar</h2>
-                <p> I höst startar historiskt många yrkeshögskoleutbildningar. 
-                Antagningen till de flesta har redan stängt, men på vissa 
-                utbildningar finns det fortfarande platser kvar. Soleltekniker, 
-                redovisningskonsult och stödpedagog är några av de utbildningar 
-                som fortfarande tar emot ansökningar.</p>
-
-                <h2>Ansökan öppnar om att bedriva teckenspråks- och 
-                dövblindtolkutbildning samt skrivtolkutbildning</h2>
-                <p>Den 15 oktober öppnar möjligheten för utbildningsanordnare 
-                inom folkbildningen att ansöka om att bedriva teckenspråks- och 
-                dövblindtolkutbildning samt skrivtolkutbildning. Ansökan stänger 
-                den 19 november och resultatet publiceras på myh.se den 
-                26 januari 2021.</p>
-
-                <h2>Webbinarium: Studerandestöd</h2>
-                <p>Hur utformar vi ett bra studerandestöd när vi inte möts på 
-                plats? Omställningen till distansundervisning har skapat nya 
-                utmaningar när det gäller studerandestöd. Studerande som 
-                tidigare inte har haft svårt att ta till sig undervisningen 
-                kan behöva stöd när studiesituationen förändras och ställer 
-                nya krav på struktur, uppmärksamhet och rutiner.</p>
-            </section>
-
-            <footer>
-                <h4>Presskonakt: Johan Lindahl</h4>
+                <p>Ämne: Pressmeddelande</p>
+                <p>I höst startar historiskt många yrkeshögskoleutbildningar. 
+                    Antagningen till de flesta har redan stängt, men på vissa 
+                    utbildningar finns det fortfarande platser kvar. Soleltekniker, 
+                    redovisningskonsult och stödpedagog är några av de utbildningar 
+                    som fortfarande tar emot ansökningar.</p>
+                </li>
+                <li>
+                <h2>20 Oktober 2020: Distansstöds webbcafé</h2>
+                <p>Ämne: Kalender</p>
+                <p>En möjlighet för dig som anordnare att möta andra anordnare vid särskilda 
+                webbcaféer för frågor och samtal kring hur man kan lösa de utmaningar och dra 
+                nytta av de möjligheter som undervisning på distans innebär.</p>
+                </li>
+                <li>
+                <h2>29 Oktober 2020: Webbinarium: Metodik för distansundervisning – så här klarar du det 
+                (och lite till)!</h2>
+                <p>Ämne: Kalender</p>
+                <p>Jag kommer aldrig fixa att göra en lika bra prestation på distans som framför mina studerande 
+                i klassrummet! Det uttalandet hördes från många lärare under våren. I det här webbinariet undersöker 
+                vi hur digitala verktyg kan stödja lärandet och hur vi skapar en interaktivitet mellan de studerande 
+                när vi inte ses på plats.</p>
+                </li>
+        </ul>
+        </div>
+        <div>
+            <aside class="sidebar">
+                <h3>Nyhetsrum</h3>
+                <ul>
+                    <li>Nyheter</li>
+                    <li>Pressmeddelande</li>
+                    <li>Kalender</li>
+                    <li>Filmer</li>
+                    <li>Pressbilder</li>
+                    <li>Nyhetsbrev</li>
+                </ul>
+                <h3>Presskontakt</h3>
+                <ul>
+                    <li>Johan Lindahl</li>
+                    <li>Telefon: 010-209 01 73</li>
+                    <li>E-post: johan.lindahl@myh.se</li>
+                    <li>Nyhetsrum på MyNewsDesk</li>
+                </ul>
                 
-                <h4>Telefon: 10-209 01 73</h4>
-                
-                <h4>Epost: johan.lindahl@myh.se</h4>
-                
-                <h4>Nyhetsrum på MyNewsDesk</h4>
-                <h4>Prenumerera</h4>
-                <h4>Dela</h4>
-            </footer>
-    
+            </aside>
+
+            <aside class="share">
+                <h3>Prenumera</h3>
+            
+                <section class="icons card">
+                <h3>Dela</h3>
+    <ul>
+      <!--fill with font-awesome icons-->
+      <li><i class="fab fa-facebook-f"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="far fa-envelope"></i></li>
+    </ul>
+  </section>
+            </aside>
+        </div>
+    </div>
+    <footer class="footer">
+        <section class="kontakt-list">
+          <h3>Kontakt</h3>
+          <ul>
+            <li>
+              <h4>Digitalt kundforum</h4>
+              <p>
+                Har du en fråga? Besök vårt kundforum,
+                <a href="#">forum.myh.se</a>
+              </p>
+            </li>
+            <li>
+              <h4>Telefon</h4>
+              <p>
+                Ring vår växel
+                <a href="tel: 010-2090100"> 010-209 01 00</a>. Växeln är öppen
+                vardagar 9.00 - 11.30, 13.00 - 15.00
+              </p>
+            </li>
+            <li>
+              <h4>Press</h4>
+              <p>
+                Presskontakter och pressmeddelanden finns i vårt
+                <a href="nyhetsrum.html">nyhetsrum</a>
+              </p>
+            </li>
+            <li>
+              <h4>E-post</h4>
+              <p>
+                Allmänna frågor/synpunkter:
+                <a href="mailto: info@myh.se">info@myh.se</a>
+                <br />
+                Registrator:
+                <a href="mailto: registrator@myh.se">registrator@myh.se</a>
+              </p>
+            </li>
+            <li>
+              <h4>Adress</h4>
+              <p>
+                Myndigheten för yrkeshögskolan <br />
+                Box 145 <br />
+                721 05 Västerås
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="about-list-footer">
+          <h3>Om webbplatsen</h3>
+          <ul>
+            <li><a href="#">Använda webbplatsen</a></li>
+            <li><a href="#">Om webbkakor (cookies)</a></li>
+            <li><a href="#">Webbkarta</a></li>
+            <li><a href="#">Tillgänglighetsredogörelse</a></li>
+          </ul>
+          <h3>Våra övriga webbplatser</h3>
+          <ul>
+            <li><a href="#">www.yrkeshogskolan.se</a></li>
+            <li><a href="#">www.konstkulturutbildning.se</a></li>
+            <li><a href="#">www.blitolk.nu</a></li>
+            <li><a href="#">www.seqf.se</a></li>
+          </ul>
+          <h3>Håll dig informerad</h3>
+          <h4>
+            <a><i class="fa fa-youtube"></i>Youtube</a>
+          </h4>
+          <h4>Ansvarig utgivare</h4>
+          <p>Thomas Persson, generaldirektör MYH.</p>
+        </section>
+      </footer>
 </body>
 </html>
