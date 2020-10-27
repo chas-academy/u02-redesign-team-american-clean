@@ -1,11 +1,13 @@
 /* Color palette https://coolors.co/1446a0-db3069-f5d547-ebebd3-3c3c3b */
 .button {
+  display: inline-block;
   background: #3C3C3B;
   color: #fff;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -13,7 +15,7 @@
 }
 
 .button.large {
-  padding: 16px;
+  padding: 20px;
 }
 
 .button.primary {
@@ -119,5 +121,11 @@ ul {
 .page-nav li a {
   text-decoration: none;
   color: #000;
+}
+
+@media screen and (max-width: 400px) {
+  .button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=components.css.map */

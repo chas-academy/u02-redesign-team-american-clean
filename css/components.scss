@@ -5,12 +5,14 @@ $btn-primary: #F5D547;
 $btn-font-color: #fff;
 
 .button {
+    display: inline-block;
     background: $btn-default;
     color: $btn-font-color;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
+    cursor: pointer;
 
     &:hover {
         background: darken($color: $btn-default, $amount: 10%);
@@ -112,6 +114,12 @@ ul {
         color: #000;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .button {
+        width: 100%;
+    }
+} 
 
 
 
