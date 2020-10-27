@@ -5,6 +5,7 @@ $btn-primary: #F5D547;
 $btn-font-color: #fff;
 
 .button {
+    display: inline-block;
     background: $btn-default;
     color: $btn-font-color;
     text-align: center;
@@ -112,6 +113,12 @@ ul {
         color: #000;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .button {
+        width: 100%;
+    }
+} 
 
 
 
