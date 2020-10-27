@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="headerStyle.css" />
+    <script
+    src="https://kit.fontawesome.com/061e52cdfe.js"
+    crossorigin="anonymous"
+  ></script>
     <title>Document</title>
   </head>
 
@@ -14,7 +19,6 @@
             <label for="ham-check" id="hamburger">&#9776</label>
       <input type="checkbox" name="ham-check" id="ham-check">
       <ul class="navSticky">
-        <li class="navItem"><a href="index.html">Start</a></li>
         <li class="navItem"><a href="omOss.html">Om oss</a></li>
         <li class="navItem">
           <a href="verksamhetsOmraden.html">Verksamhetsområden</a>
@@ -35,11 +39,11 @@
         <li><a href="#">Anpassa</a></li>
         <li><a href="#">Mina sidor</a></li>
       </ul>
-      <div>
+      <form>
       <label for="searchField"><i></i></label>
       <input type="search" name="searchField" placeholder="Ange sökord" />
-      <button type="submit">Sök</button>
-      </div>
+      <a type="submit" aria-label="Sök på webbplatsen" class="button"><i class="fas fa-search"></i> Sök</a>
+      </form>
     </div>
     <div id="breadcrumbs">
       <p>

@@ -55,7 +55,7 @@ body {
           align-items: center;
   color: white;
   /*padding: 2vw;*/
-  width: 70vw;
+  width: 100vw;
   height: 75px;
 }
 
@@ -76,10 +76,8 @@ body {
   text-decoration: none;
   padding: 0.5vw 0.8vw 0.15vw 0.8vw;
   margin: 0.2vw;
-  background: linear-gradient(150deg, black, #252020);
   -webkit-transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
   transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
-  border-bottom: 2px solid black;
   /*&::after {
       content: "";
       background-color: yellow;
@@ -90,14 +88,8 @@ body {
 
 .navItem a:hover {
   color: yellow;
-  border-bottom: 2px solid yellow;
   -webkit-transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
   transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
-}
-
-[type="search"] {
-  height: 30px;
-  margin-bottom: 5px;
 }
 
 #smalllogo {
@@ -115,39 +107,33 @@ body {
 }
 
 #banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100vw;
   margin: 80px 0px 0px 0px;
   border-bottom: 1px solid black;
-  padding-left: 0px;
+  height: 37px;
 }
 
-#banner label {
-  margin-left: auto;
+#banner form {
+  float: right;
+  margin: -2px 10px 0 0;
+}
+
+#banner form input {
+  border: 0;
+  padding: 8px;
+  width: 300px;
 }
 
 #banner ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-right: auto;
-  list-style-type: none;
+  display: inline;
+}
+
+#banner ul li {
+  float: left;
 }
 
 #banner ul a {
   color: black;
   padding: 0.5vw 0.8vw 0.15vw 0.8vw;
-}
-
-#banner button {
-  height: 30px;
-  width: 60px;
 }
 
 .bigbody {
@@ -164,7 +150,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1210px) {
   #smalllogo {
     display: inline-block;
     height: 4vw;
@@ -175,18 +161,17 @@ body {
   }
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 1072px) {
   .navSticky {
     display: none;
     color: black;
     background-color: black;
     position: absolute;
     top: 75px;
-    right: 15vw;
     height: initial;
   }
   .navSticky li {
-    margin: 0.5vh;
+    margin: 18px;
   }
   #smalllogo {
     display: none;
@@ -211,9 +196,23 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+@media only screen and (max-width: 694px) {
   #banner {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    height: auto;
+  }
+  #banner form {
+    float: none;
+    display: block;
+    margin: 10px;
+  }
+  #banner form input {
+    width: 100%;
+    margin: 5px 0 5px 0;
+  }
+  #banner form .button {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=headerStyle.css.map */
