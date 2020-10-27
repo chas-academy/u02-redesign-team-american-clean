@@ -12,6 +12,10 @@
   background: #222222;
 }
 
+.button.large {
+  padding: 16px;
+}
+
 .button.primary {
   background: #F5D547;
 }
@@ -59,8 +63,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -70,12 +72,30 @@
 }
 
 .hero-img h1 {
-  margin: 0;
+  margin: auto;
   font-size: 3.5em;
   color: #fff;
   text-align: center;
-  display: block;
   width: 100%;
+}
+
+.hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(60, 60, 59, 0.7);
+  padding: 20px;
+  position: absolute;
+  top: 30vh;
+  height: 350px;
 }
 
 ul {

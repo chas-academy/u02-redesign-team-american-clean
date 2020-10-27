@@ -17,6 +17,8 @@ Two button designs, default style:
 
 Primary button: Add `.primary`.
 
+Make a large button with `.large`.
+
 ## Simple page submenu
 ```
  <ul class="page-nav">
