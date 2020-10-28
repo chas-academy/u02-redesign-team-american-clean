@@ -7,6 +7,7 @@
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
+  border-radius: 7px;
   cursor: pointer;
 }
 
@@ -19,12 +20,12 @@
 }
 
 .button.primary {
-  background: #f5d547;
+  background: #00C84E;
   color: #000;
 }
 
 .button.primary:hover {
-  background: #f2ca17;
+  background: #00953a;
 }
 
 .card {

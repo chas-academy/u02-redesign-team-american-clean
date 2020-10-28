@@ -1,8 +1,7 @@
 /* Color palette https://coolors.co/1446a0-db3069-f5d547-ebebd3-3c3c3b */
 
 $btn-default: #3c3c3b;
-$btn-primary: #f5d547;
-$btn-font-color-primary: #000;
+$btn-primary: #00C84E;
 $btn-font-color: #fff;
 
 .button {
@@ -13,6 +12,7 @@ $btn-font-color: #fff;
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
+  border-radius: 7px;
   cursor: pointer;
   &:hover {
     background: darken($color: $btn-default, $amount: 10%);
