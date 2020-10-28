@@ -1,11 +1,7 @@
 /* Color palette https://coolors.co/1446a0-db3069-f5d547-ebebd3-3c3c3b */
 .button {
   display: inline-block;
-<<<<<<< HEAD
   background: #3c3c3b;
-=======
-  background: #3C3C3B;
->>>>>>> header-2
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -107,7 +103,7 @@
 }
 
 .hero-wrapper a {
-  font-size: 2.2em;
+  font-size: 1.2em;
 }
 
 ul {
@@ -131,6 +127,10 @@ ul {
 .page-nav li a {
   text-decoration: none;
   color: #000;
+}
+
+.page-nav li a:hover, .page-nav li a:active {
+  font-weight: 600;
 }
 
 @media screen and (max-width: 400px) {
