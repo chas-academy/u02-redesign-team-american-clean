@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="statistik.css">
-    <link rel="stylesheet" href="/u02-redesign-team-american-clean/css/style.css">
-    <link rel="stylesheet" href="/u02-redesign-team-american-clean/templates/footer/footer.css">
-    <link rel="stylesheet" href="/u02-redesign-team-american-clean/templates/header/headerStyle.css">
-    <link rel="stylesheet" href="/u02-redesign-team-american-clean/css/grid.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/templates/footer/footer.css">
+    <link rel="stylesheet" href="/templates/header/headerStyle.css">
+    <link rel="stylesheet" href="/css/grid.css">
     <title>Statistik</title>
 </head>
 
@@ -47,8 +47,7 @@
         <button type="submit">Sök</button>
         </div>
       </div>
-      <main id= "mainStatistik" class= "grid>
-        <div id= "breadcrumbs">
+      <div id="breadcrumbs">
             <p>
               <a href="#">Start</a>
               <a href="#">Nästa </a>
@@ -56,18 +55,13 @@
               <a href="#">Nästa </a>
               <a href="#">Nästa </a>
             </p>
-    </div>      
+            </div>      
+      <main id= "mainStatistik" class= "grid">
       
-        <aside id= "sidomeny">
-            <ul>
-                <li><a href="#">Yrkeshögskoleutbildningar</a></li>
-                <li> <a href="#">Statistik om konst- och kulturutbildningar och utbildningar med endast tillsyn </a></li>
-                <li> <a href="#">Statistik om tolkutbildningar</a> </li>
-            </ul>
-        </aside>
-        <section>
+        <section class="col-2-3">
             <h1>Statistik</h1>
-            <img class="grid grid-gap" id="kartbild" src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FIllustrationer%2Fstatistik_webb.png&width=584&height=0&method=Box" alt="bild på svenska karta">
+            <!-- <img class="grid grid-gap"  -->
+            <img id="kartbild" src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FIllustrationer%2Fstatistik_webb.png&width=584&height=0&method=Box" alt="bild på svenska karta">
             <article class="col-2-3 card">
               <h3>Statistik</h3>
                 <p>
@@ -120,7 +114,13 @@
                 </article>
             </article>
         </section>
-        
+         <aside id= "sidomeny">
+            <ul>
+                <li><a href="#">Yrkeshögskoleutbildningar</a></li>
+                <li><a href="#">Statistik om konst- och kulturutbildningar och utbildningar med endast tillsyn </a></li>
+                <li><a href="#">Statistik om tolkutbildningar</a></li>
+            </ul>
+        </aside>
     </main>
         <footer class="footer">
             <section class="kontakt-list">
