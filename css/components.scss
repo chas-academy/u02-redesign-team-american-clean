@@ -2,6 +2,7 @@
 
 $btn-default: #3c3c3b;
 $btn-primary: #f5d547;
+$btn-font-color-primary: #000;
 $btn-font-color: #fff;
 
 .button {
@@ -25,6 +26,7 @@ $btn-font-color: #fff;
 
 .button.primary {
   background: $btn-primary;
+  color: $btn-font-color-primary;
 
   &:hover {
     background: darken($color: $btn-primary, $amount: 10%);
