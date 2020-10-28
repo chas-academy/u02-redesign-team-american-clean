@@ -1,10 +1,8 @@
 body {
     text-align: center;
-    background-color: gainsboro;
 }
 
 .sec {
-    border: 2px solid black;
     background-color: yellow;
     border-radius: 5px;
     box-shadow: 4px 4px gray;
@@ -14,26 +12,11 @@ body {
 .darkSec {
     color: black;
     background-color: white;
-    margin-bottom: 1vh;
-    box-shadow: none;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
-.card {
-    border: 1px solid black;
-    margin-bottom: 1vh;
-    margin-top: 1vh;
-    background-color: green;
-    border-radius: 5px;
+    margin-bottom: 300px;
     box-shadow: 4px 4px gray;
-    padding: 15px;
-    
-}
-
-#kontaktaBild {
-    width: 30vw;
+    padding: 10px;
+    border-radius: 5px;
+    margin:auto;
 }
 
 @media screen and (min-width:801px) {
@@ -41,40 +24,32 @@ body {
         display: flex;
         justify-content: center;
     }
-    .sideSet {
-        display: flex;
-        align-content: flex-end;
-        flex-direction: column;
-        max-width: 40vw;
-        margin-top: 4vh;
-    }
     .twoByTwo {
         display: flex;
         grid-column-start: 1;
         grid-column-end: 4;
         flex-direction: row;
         justify-content: space-evenly;
-        border: 0px solid black;
     }
     .twoByTwo section {
         width: 22vw;
         box-shadow: 4px 4px gray;
     }
-    .card{
-        width:22vw;
+    #kontaktaBild {
+        width: 40vw;
     }
 }
     @media screen and (max-width: 800px) and (min-width: 476px) {
        .twoByTwo section {
             margin-bottom:1vh;
        }
+       #kontaktaBild {
+        width: 70vw;
+    }
     }
     @media screen and (max-width: 475px) {
         #map {
             display: none;
         }
-        iframe {
-            display: none;
-        }
+        
     }
-}
