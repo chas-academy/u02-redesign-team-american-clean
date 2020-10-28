@@ -38,13 +38,14 @@ article h4 {
   justify-content: center;
 }
 .otherlinks a {
-  width: 50%;
+  width: 25%;
   margin: 1em;
   color: black;
 }
 .current-events > section {
   /* THIS IS THE POSTS GRID, SHOULD BE WIDER ALSO SHOULD BE RESPONSIVE HAHA */
   max-width: 70vw;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -102,7 +103,7 @@ main.grid {
 }
 .links > .card {
   margin: 0.5em;
-  background-color: green;
+  background-color: rgb(54, 131, 54);
   color: white;
   text-decoration: none;
   font-size: 1em;
@@ -110,6 +111,9 @@ main.grid {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.links > .card:hover {
+  background-color: darkgreen;
 }
 .grid .col-2-3.apply {
   grid-column-start: 1;
@@ -160,7 +164,6 @@ main.grid {
 @media only screen and (max-width: 870px) {
   .current-events > section {
     grid-template-columns: 1fr;
-    margin-right: 0px;
     min-width: 80vw;
   }
   .grid.index {
@@ -176,5 +179,8 @@ main.grid {
   }
   .otherlinks {
     flex-direction: column;
+  }
+  .otherlinks a {
+    width: 50%;
   }
 }

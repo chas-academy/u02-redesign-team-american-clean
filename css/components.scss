@@ -1,125 +1,130 @@
-/* Color palette https://coolors.co/1446a0-db3069-f5d547-ebebd3-3c3c3b */ 
+/* Color palette https://coolors.co/1446a0-db3069-f5d547-ebebd3-3c3c3b */
 
-$btn-default: #3C3C3B;
-$btn-primary: #F5D547;
+$btn-default: #3c3c3b;
+$btn-primary: #f5d547;
 $btn-font-color: #fff;
 
 .button {
-    display: inline-block;
-    background: $btn-default;
-    color: $btn-font-color;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    cursor: pointer;
+  display: inline-block;
+  background: $btn-default;
+  color: $btn-font-color;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
 
-    &:hover {
-        background: darken($color: $btn-default, $amount: 10%);
-    }
+  &:hover {
+    background: darken($color: $btn-default, $amount: 10%);
+  }
 }
 
 .button.large {
-    padding: 20px;
+  padding: 20px;
 }
 
 .button.primary {
-    background: $btn-primary;
+  background: $btn-primary;
 
-    &:hover {
-        background: darken($color: $btn-primary, $amount: 10%);
-    }
+  &:hover {
+    background: darken($color: $btn-primary, $amount: 10%);
+  }
 }
 
 .card {
-    background: #fff;
-    padding: 15px;
+  background: #fff;
+  padding: 15px;
 }
 
-.sidebar, .share {
-    padding: 15px;
-    color: #fff;
+.sidebar,
+.share {
+  padding: 15px;
+  color: #fff;
 }
 
 .sidebar {
-    background: #1446A0;
+  background: #1446a0;
 }
 
 .share {
-    background: #DB3069;
-    font-weight: bold;
+  background: #db3069;
+  font-weight: bold;
 
-    .icons-row {
-        font-size: 24px;
-        float: right;
-    }
+  .icons-row {
+    font-size: 24px;
+    float: right;
+  }
 }
 
 .post-list li {
-    padding: 15px;
-    background: #F5D547;
-    color: #fff;
-    margin-bottom: 15px;
+  padding: 15px;
+  background: #f5d547;
+  color: #fff;
+  margin-bottom: 15px;
 }
 
 .hero-img {
-    background: url(../index/bricks-2181920_1280.jpg) no-repeat fixed center;
-    background-size: cover;
-    height: 80vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: url(../index/bricks-2181920_1280.jpg) no-repeat fixed center;
+  background-size: cover;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    h1 {
-        margin: auto;
-        font-size: 3.5em;
-        color: #fff;
-        text-align: center;
-        width: 100%;
-    }
+  h1 {
+    margin: auto;
+    font-size: 3.5em;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .hero-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background: rgba(60, 60, 59, 0.7);
-    padding: 20px;
-    position: absolute;
-    top: 30vh;
-    height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: rgba(60, 60, 59, 0.7);
+  padding: 20px;
+  position: absolute;
+  top: 30vh;
+  height: 350px;
+  a {
+    font-size: 2.2em;
+  }
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .page-nav li {
-    margin: 20px;
+  margin: 20px;
 
-    &:before {
-        /* https://stackoverflow.com/questions/20782368/use-font-awesome-icon-as-css-content */ 
-        font-family: "Font Awesome 5 Free";
-        content: "\f054";
-        display: inline-block;
-        padding-right: 5px;
-        vertical-align: middle;
-        font-weight: 900;
-    }
+  &:before {
+    /* https://stackoverflow.com/questions/20782368/use-font-awesome-icon-as-css-content */
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    display: inline-block;
+    padding-right: 5px;
+    vertical-align: middle;
+    font-weight: 900;
+  }
 
-    a {
-        text-decoration: none;
-        color: #000;
-    }
+  a {
+    text-decoration: none;
+    color: #000;
+    // &:hover {
+    //   border-bottom: 1px solid black;
+    //   font-weight: 600;
+    // }
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .button {
-        width: 100%;
-    }
-} 
-
-
-
+  .button {
+    width: 100%;
+  }
+}

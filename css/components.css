@@ -1,7 +1,7 @@
 /* Color palette https://coolors.co/1446a0-db3069-f5d547-ebebd3-3c3c3b */
 .button {
   display: inline-block;
-  background: #3C3C3B;
+  background: #3c3c3b;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -19,7 +19,7 @@
 }
 
 .button.primary {
-  background: #F5D547;
+  background: #f5d547;
 }
 
 .button.primary:hover {
@@ -31,17 +31,18 @@
   padding: 15px;
 }
 
-.sidebar, .share {
+.sidebar,
+.share {
   padding: 15px;
   color: #fff;
 }
 
 .sidebar {
-  background: #1446A0;
+  background: #1446a0;
 }
 
 .share {
-  background: #DB3069;
+  background: #db3069;
   font-weight: bold;
 }
 
@@ -52,7 +53,7 @@
 
 .post-list li {
   padding: 15px;
-  background: #F5D547;
+  background: #f5d547;
   color: #fff;
   margin-bottom: 15px;
 }
@@ -66,11 +67,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .hero-img h1 {
@@ -86,18 +87,22 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background: rgba(60, 60, 59, 0.7);
   padding: 20px;
   position: absolute;
   top: 30vh;
   height: 350px;
+}
+
+.hero-wrapper a {
+  font-size: 2.2em;
 }
 
 ul {
