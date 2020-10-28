@@ -1,34 +1,69 @@
 
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="statistik.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/templates/footer/footer.css">
+    <link rel="stylesheet" href="/templates/header/headerStyle.css">
+    <link rel="stylesheet" href="/css/grid.css">
     <title>Statistik</title>
 </head>
 
 <body>
-    <main>
-        <header></header>
-        <aside>
-            <ul>
-                <li><a href="#">Yrkeshögskoleutbildningar</a></li>
-                <li>Statistik om konst- och kulturutbildningar och utbildningar med endast tillsyn</li>
-                <li>Statistik om tolkutbildningar</li>
-            </ul>
-        </aside>
-        <section>
-            <ol>
-                <li a href="#">Start</li>
-                <li> > </li>
-                <li>Statistik</li>
-            </ol>
-        </section>
-        <section>
+    <header class="topHeader">
+        <img id="biglogo" src="/templates/header/myh_logo_white_big_shaded.png">
+        <img id="smalllogo" src="/templates/header/myh_logo_white_big_shaded_small.png">
+              <label for="ham-check" id="hamburger">&#9776;</label>
+        <input type="checkbox" name="ham-check" id="ham-check">
+        <ul class="navSticky">
+          <li class="navItem"><a href="index.html">Start</a></li>
+          <li class="navItem"><a href="omOss.html">Om oss</a></li>
+          <li class="navItem">
+            <a href="verksamhetsOmraden.html">Verksamhetsområden</a>
+          </li>
+          <li class="navItem">
+            <a href="lagarReglerTillsyn.html">Lagar, Regler, Tillsyn</a>
+          </li>
+          <li class="navItem"><a href="statistik.html">Statistik</a></li>
+          <li class="navItem"><a href="publikationer.html">Publikationer</a></li>
+          <li class="navItem"><a href="nyhetsrum.html">Nyhetsrum</a></li>
+          <li class="navItem"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </header>
+      <div role="banner" id="banner">
+        <ul>
+          <li><a href="#">In English</a></li>
+          <li><a href="#">Lättläst</a></li>
+          <li><a href="#">Anpassa</a></li>
+          <li><a href="#">Mina sidor</a></li>
+        </ul>
+        <div>
+        <label for="searchField"><i></i></label>
+        <input type="search" name="searchField" placeholder="Ange sökord" />
+        <button type="submit">Sök</button>
+        </div>
+      </div>
+      <div id="breadcrumbs">
+            <p>
+              <a href="#">Start</a>
+              <a href="#">Nästa </a>
+              <a href="#">Nästa </a>
+              <a href="#">Nästa </a>
+              <a href="#">Nästa </a>
+            </p>
+            </div>      
+      <main id= "mainStatistik" class= "grid">
+      
+        <section class="col-2-3">
             <h1>Statistik</h1>
-            <img src="#" alt="">
-            <article>
+            <!-- <img class="grid grid-gap"  -->
+            <img id="kartbild" src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FIllustrationer%2Fstatistik_webb.png&width=584&height=0&method=Box" alt="bild på svenska karta">
+            <article class="col-2-3 card">
+              <h3>Statistik</h3>
                 <p>
                     Här hittar du statistik om yrkeshögskoleutbildningar, konst- och kulturutbildningar och utbildningar
                     med endast tillsyn samt tolkutbildningar inom folkbildningen.
@@ -38,26 +73,27 @@
 
                     Klicka på den utbildningsform du är intresserad av i menyn till höger.
                 </p>
-                <article>
-                    <p>
+            </article>
+            <article class="col-2-3 card">
+                <p>
                     <h2>Faktablad med statistik </h2>
-                    Här kan du ladda ner faktablad med kortfattad statistik om yrkeshögskole-
-                    utbildningar, konst- och kulturutbildningar samt tolkutbildningar.
-                    <hr>
-                    <a
+                        Här kan du ladda ner faktablad med kortfattad statistik om yrkeshögskole-
+                        utbildningar, konst- och kulturutbildningar samt tolkutbildningar.
+                        <hr>
+                        <a
                         href="https://www.myh.se/Documents/Statitik/Yrkesh%c3%b6gskoleutbildningar/Kortfattad%20statistik/Kortfattad_statistik_yrkeshogskolan_2019.pdf">Faktablad
                         med kortfattad statistik om yrkeshögskolan 2019</a>
-                    <hr>
-                    <a
+                        <hr>
+                        <a
                         href="https://www.myh.se/Documents/Statitik/Konst-och%20kulturutbildningar%20och%20vissa%20andra%20utbildningar/Konst-%20och%20kulturutbildningar/Kortfattad%20statistik/Kortfattad_statistik_konstkulturutbildningar_2019.pdf">Faktablad
                         med kortfattad statistik om konst- och kulturutbildningar 2019</a>
-                    <hr>
-                    <a
+                        <hr>
+                        <a
                         href="https://www.myh.se/Documents/Statitik/Tolkutbildningar%20inom%20folkbildningen/Kortfattad%20statistik/Kortfattad_statistik_tolkutbildningar_2019.pdf">Faktablad
                         med kortfattad statistik om tolkutbildningar 2019</a>
                     </p>
                 </article>
-                <article>
+                <article class="col-2-3 card">
                     <h2>Statistiska årsrapporter</h2>
                     <p>
                         Via länkarna nedan hittar du Myndigheten för yrkeshögskolans senaste årsrapporter med samlad
@@ -78,7 +114,84 @@
                 </article>
             </article>
         </section>
+         <aside id= "sidomeny">
+            <ul>
+                <li><a href="#">Yrkeshögskoleutbildningar</a></li>
+                <li><a href="#">Statistik om konst- och kulturutbildningar och utbildningar med endast tillsyn </a></li>
+                <li><a href="#">Statistik om tolkutbildningar</a></li>
+            </ul>
+        </aside>
     </main>
+        <footer class="footer">
+            <section class="kontakt-list">
+              <h3>Kontakt</h3>
+              <ul>
+                <li>
+                  <h4>Digitalt kundforum</h4>
+                  <p>
+                    Har du en fråga? Besök vårt kundforum,
+                    <a href="#">forum.myh.se</a>
+                  </p>
+                </li>
+                <li>
+                  <h4>Telefon</h4>
+                  <p>
+                    Ring vår växel
+                    <a href="tel: 010-2090100"> 010-209 01 00</a>. Växeln är öppen
+                    vardagar 9.00 - 11.30, 13.00 - 15.00
+                  </p>
+                </li>
+                <li>
+                  <h4>Press</h4>
+                  <p>
+                    Presskontakter och pressmeddelanden finns i vårt
+                    <a href="nyhetsrum.html">nyhetsrum</a>
+                  </p>
+                </li>
+                <li>
+                  <h4>E-post</h4>
+                  <p>
+                    Allmänna frågor/synpunkter:
+                    <a href="mailto:info@myh.se">info@myh.se</a>
+                    <br />
+                    Registrator:
+                    <a href="mailto:registrator@myh.se">registrator@myh.se</a>
+                  </p>
+                </li>
+                <li>
+                  <h4>Adress</h4>
+                  <p>
+                    Myndigheten för yrkeshögskolan <br/>
+                    Box 145 <br/>
+                    721 05 Västerås
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <section class="about-list-footer">
+              <h3>Om webbplatsen</h3>
+              <ul>
+                <li><a href="#">Använda webbplatsen</a></li>
+                <li><a href="#">Om webbkakor (cookies)</a></li>
+                <li><a href="#">Webbkarta</a></li>
+                <li><a href="#">Tillgänglighetsredogörelse</a></li>
+              </ul>
+              <h3>Våra övriga webbplatser</h3>
+              <ul>
+                <li><a href="#">www.yrkeshogskolan.se</a></li>
+                <li><a href="#">www.konstkulturutbildning.se</a></li>
+                <li><a href="#">www.blitolk.nu</a></li>
+                <li><a href="#">www.seqf.se</a></li>
+              </ul>
+              <h3>Håll dig informerad</h3>
+              <h4>
+                <a><i class="fa fa-youtube"></i>Youtube</a>
+              </h4>
+              <h4>Ansvarig utgivare</h4>
+              <p>Thomas Persson, generaldirektör MYH.</p>
+            </section>
+          </footer>
+    
 </body>
 
 </html>

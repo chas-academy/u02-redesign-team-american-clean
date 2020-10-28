@@ -41,7 +41,7 @@ main {
 
 .img-container {
   text-align: center;
-  background-color: yellow;
+  background-color: white;
 }
 
 .card {
@@ -64,6 +64,19 @@ main {
   background-color: green;
   font-size: 1.5em;
   color: white;
+}
+
+.call-to-action-2 {
+  margin: 1em auto;
+  border: 1px solid #464646;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  padding: 0.5em;
+  width: 50%;
+  background-color: yellow;
+  font-size: 1.5em;
+  color: black;
 }
 
 .icons {

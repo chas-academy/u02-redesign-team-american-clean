@@ -1,61 +1,63 @@
 html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
 body {
-    background: #EBEBD3;
+  background: #ebebd3;
 }
 
 .card {
-    background: yellow;
-    padding: 15px;
-    box-shadow: 0px 0px 2px 2px grey;
+  background: white;
+  padding: 15px;
+  color: black;
+  box-shadow: 0px 0px 2px 2px grey;
 }
 
 .sidebar {
-height: 100%; 
-width: 250px; 
-z-index: 1; 
-top: 0; 
-left: 0;
-background-color: black; 
-overflow-x: hidden; 
-padding-top: 60px;
-transition: 0.5s;
+  /* height: 100%;  */
+  width: 250px;
+  z-index: 1;
+  /* top: 0;
+  left: 0; */
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 60px;
+  /* transition: 0.5s; */
 }
 
-.sidebar, .share {
-    padding: 10px;
-    color: white;
-    box-shadow: 0px 0px 2px 2px grey;
+.sidebar,
+.share {
+  padding: 10px;
+  color: white;
+  box-shadow: 0px 0px 2px 2px grey;
 }
 
 .sidebar {
-    background: black;
-    box-shadow: 0px 0px 2px 2px grey;
-    font-family: HelveticaNeue;
+  background: black;
+  box-shadow: 0px 0px 2px 2px grey;
+  font-family: HelveticaNeue;
 }
 
 .share {
-    background: black;
-    box-shadow: 0px 0px 2px 2px grey;
-    height: 100%; 
-    width: 250px; 
+  background: black;
+  box-shadow: 0px 0px 2px 2px grey;
+  /* height: 100%; */
+  width: 250px;
 }
 
 .post-list {
-    list-style-type: none;
-    padding: 0;
-    box-shadow: 0px 0px 2px 2px grey;
+  list-style-type: none;
+  padding: 0;
+  box-shadow: 0px 0px 2px 2px grey;
 }
 
 .post-list li {
-    padding: 15px;
-    background: white;
-    color: black;
-    margin-bottom: 15px;
-    box-shadow: 0px 0px 2px 2px grey;
+  padding: 15px;
+  background: white;
+  color: black;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 2px 2px grey;
 }

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+#mainStatistik {
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#sidomeny {
+  max-width: 350px;
+  background-color: #464646;
+  color: white;
+  padding: 1em;
+  max-height: 450px;
+  margin: 1em 1em 1em 1em;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+#kartbild {
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+aside ul li a {
+  font-size: 24px;
+  text-decoration: none;
+  display: block;
+  list-style-type: none;
+  color: white;
+}
+
+a:hover {
+  color: blue;
+}
+
+#miniatyr ol {
+  background-color: rgb(112, 109, 109);
+  color: white;
+  font-size: 22px;
+}
+
+#miniatyr ol li {
+  display: inline;
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 49px;
+  font-size: 82px;
+  text-align: center;
+}
+
+article {
+  margin-top: 39px;
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+hr {
+  clear: both;
+  border: 5px solid transparent;
+  height: 4px;
+}
+
+main a {
+  font-style: italic;
+  color: blue;
+}
+
+article p a:hover {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 801px) {
+  #map {
+    width: 50vw;
+    float: left;
+  }
+
+  .sideSet {
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    max-width: 40vw;
+    margin-top: 4vh;
+  }
+  .twoByTwo {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 0px solid black;
+  }
+
+  .twoByTwo section {
+    width: 20vw;
+    box-shadow: 4px 4px gray;
+  }
+}
