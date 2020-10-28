@@ -70,6 +70,10 @@ body {
   background-color: transparent;
 }
 
+.navItem:not(:first-child) {
+  border-left: 2px solid yellow;
+}
+
 .navItem a {
   white-space: nowrap;
   color: white;
@@ -78,16 +82,12 @@ body {
   margin: 0.2vw;
   -webkit-transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
   transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
-  /*&::after {
-      content: "";
-      background-color: yellow;
-      padding-left: 1px;
-      margin-left: 1vw;
-    }*/
+  border-bottom: 2px solid black;
 }
 
 .navItem a:hover {
   color: yellow;
+  border-bottom: 2px solid yellow;
   -webkit-transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
   transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
 }

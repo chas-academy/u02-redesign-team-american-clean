@@ -54,6 +54,9 @@ body {
       background-color: transparent;
     }
   }
+  &:not(:first-child) {
+    border-left: 2px solid yellow;
+  }
   a {
     white-space: nowrap;
     color: white;
@@ -61,17 +64,11 @@ body {
     padding: $padding-horiz;
     margin: 0.2vw;
     transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
-  //  border-bottom: 2px solid rgba(0, 0, 0, 1);
-    /*&::after {
-      content: "";
-      background-color: yellow;
-      padding-left: 1px;
-      margin-left: 1vw;
-    }*/
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
   }
   a:hover {
     color: yellow;
-    //border-bottom: 2px solid yellow;
+    border-bottom: 2px solid yellow;
     transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
   }
 }
@@ -185,7 +182,7 @@ body {
 
       input {
         width: 100%;
-        margin: 5px 0 5px 0
+        margin: 5px 0 5px 0;
       }
 
       .button {
