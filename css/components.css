@@ -1,7 +1,11 @@
 /* Color palette https://coolors.co/1446a0-db3069-f5d547-ebebd3-3c3c3b */
 .button {
   display: inline-block;
+<<<<<<< HEAD
   background: #3c3c3b;
+=======
+  background: #3C3C3B;
+>>>>>>> header-2
   color: #fff;
   text-align: center;
   text-decoration: none;
