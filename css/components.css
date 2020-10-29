@@ -27,9 +27,21 @@
   background: #00953a;
 }
 
+.img-container {
+  text-align: center;
+  background-color: yellow;
+}
+
+.img-container img {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .card {
   background: #fff;
   padding: 15px;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
 }
 
 .sidebar,
@@ -39,7 +51,7 @@
 }
 
 .sidebar {
-  background: #1446a0;
+  background: #464646;
 }
 
 .share {
