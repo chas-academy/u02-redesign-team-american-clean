@@ -40,11 +40,12 @@ article h4 {
 .otherlinks a {
   width: 25%;
   margin: 1em;
-  color: black;
+  /* color: black; */
 }
 .current-events > section {
   /* THIS IS THE POSTS GRID, SHOULD BE WIDER ALSO SHOULD BE RESPONSIVE HAHA */
-  max-width: 70vw;
+  /* max-width: 80vw; */
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -128,7 +129,7 @@ main.grid {
   box-shadow: 1px 1px 4px darkslategrey;
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1199px) {
   .grid .col-2-3.apply {
     grid-template-columns: auto;
   }
@@ -152,16 +153,17 @@ main.grid {
     grid-template-rows: auto auto auto;
     grid-template-areas: "links links links links links" ". calendar calendar calendar ." ". current current current .";
   }
-  .calendar.card section {
-    flex-direction: row;
-    justify-content: center;
-  }
+
   .month {
     width: 50%;
   }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 1190px) {
+  .calendar.card section {
+    flex-direction: row;
+    justify-content: center;
+  }
   .current-events > section {
     grid-template-columns: 1fr;
     min-width: 80vw;
