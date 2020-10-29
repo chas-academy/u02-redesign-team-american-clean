@@ -5,18 +5,19 @@ body {
 .sec {
     background-color: yellow;
     border-radius: 5px;
-    box-shadow: 4px 4px gray;
+    box-shadow: 1px 1px 3px black;
     padding: 10px;
 }
 
 .darkSec {
     color: black;
     background-color: white;
-    
-    box-shadow: 4px 4px gray;
+    box-shadow: 1px 1px 3px black;
     padding: 10px;
     border-radius: 5px;
     margin:auto;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
 @media screen and (min-width:801px) {
@@ -33,13 +34,13 @@ body {
     }
     .twoByTwo section {
         width: 22vw;
-        box-shadow: 4px 4px gray;
+        box-shadow: 1px 1px 3px black;
     }
     #kontaktaBild {
         width: 40vw;
     }
 }
-    @media screen and (max-width: 800px) and (min-width: 476px) {
+    @media screen and (max-width: 800px) {
        .twoByTwo section {
             margin-bottom:1vh;
        }
@@ -47,9 +48,4 @@ body {
         width: 70vw;
     }
     }
-    @media screen and (max-width: 475px) {
-        #map {
-            display: none;
-        }
-        
-    }
+    
