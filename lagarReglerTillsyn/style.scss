@@ -10,6 +10,8 @@ main {
   padding: 1em;
   max-height: 450px;
   margin: 1em 1em 1em 1em;
+  max-width: 50%;
+  min-width: 400px;
   h3 {
     border-bottom: 2px solid black;
     padding-bottom: 0.5em;
@@ -28,14 +30,14 @@ main {
 .col-2-3.card {
   margin: 1em;
   padding: 1em;
-  img {
-    width: 50%;
-    margin: 0 auto;
-  }
 }
 .img-container {
   text-align: center;
   background-color: yellow;
+  img {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 .card {
   box-shadow: 1px 1px 3px black;
@@ -43,25 +45,28 @@ main {
 .col1 {
   min-width: 33vw;
 }
-.call-to-action {
-  margin: 1em auto;
-  border: 1px solid rgb(70, 70, 70);
-  border-radius: 5px;
-  display: block;
-  text-align: center;
-  padding: 0.5em;
-  width: 50%;
-  background-color: green;
-  font-size: 1.5em;
-  //add font-size mediaquery to make button repsonsive
-  color: white;
-}
+// .call-to-action {
+//   margin: 1em auto;
+//   border: 1px solid rgb(70, 70, 70);
+//   border-radius: 5px;
+//   display: block;
+//   text-align: center;
+//   padding: 0.5em;
+//   width: 50%;
+//   background-color: green;
+//   font-size: 1.5em;
+//   //add font-size mediaquery to make button repsonsive
+//   color: white;
+// }
 .icons {
   border: 1px solid rgb(70, 70, 70);
   border-radius: 5px;
   width: 50%;
-  margin: 0 auto;
+  margin: 1em;
+  padding: 1em;
   font-size: 1.5em;
+  min-width: 400px;
+  display: inline-block;
   h4 {
     text-align: center;
     font-size: 1.1em;
@@ -78,3 +83,17 @@ main {
   }
 }
 //Hannes' code input ends here
+
+@media only screen and (max-width: 999px) {
+  .link-list {
+    margin: 0 auto;
+    max-width: 70%;
+    min-width: auto;
+  }
+  .icons {
+    width: 70%;
+    display: block;
+    margin: 1em auto;
+    min-width: auto;
+  }
+}
