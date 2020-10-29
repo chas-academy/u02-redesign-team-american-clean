@@ -173,6 +173,9 @@ body {
   .navSticky li {
     margin: 18px;
   }
+  .navSticky .navItem {
+    border: 0;
+  }
   #smalllogo {
     display: none;
   }
