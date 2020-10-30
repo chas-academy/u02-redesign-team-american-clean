@@ -1,3 +1,4 @@
+/* Sitewide grid based on three columns, see readme */
 .grid {
   display: -ms-grid;
   display: grid;
