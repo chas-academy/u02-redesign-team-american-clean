@@ -1,11 +1,27 @@
+body,
+html {
+  max-width: 100vw;
+}
+
+main {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
 article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   min-height: 200px;
   max-width: 100%;
-
   margin: 0.5em;
   padding: 1em;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -14,123 +30,178 @@ article span {
   text-align: left;
   width: 100%;
 }
+
 article h4 {
   width: 100%;
   text-align: left;
 }
+
 .current-events {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
   grid-area: current;
 }
+
+.current-events section {
+  width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
 .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
   grid-area: links;
 }
 
 .otherlinks {
+  -ms-grid-column: 1;
   grid-column-start: 1;
   grid-column-end: 4;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
+
 .otherlinks a {
   width: 25%;
   margin: 1em;
-  /* color: black; */
 }
-.current-events > section {
-  /* THIS IS THE POSTS GRID, SHOULD BE WIDER ALSO SHOULD BE RESPONSIVE HAHA */
-  /* max-width: 80vw; */
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
+
 .thumbnail {
   height: 10vw;
   width: 18vw;
+  -webkit-filter: grayscale(50%);
   filter: grayscale(50%);
   margin: 0.5em 0 1em 0;
   z-index: 1;
 }
+
 /* GET THIS CENTERRED ALONG WITH OTHER CARDS NEXT? */
 /* STYLE IN A ROW WITH ICONS */
 .calendar.card {
   max-height: 450px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: calendar;
 }
+
 .calendar.card section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .month {
   padding: 0.5em;
 }
+
 .month ul {
   list-style-type: none;
 }
+
 .month h4 {
   border-bottom: 2px solid black;
   margin: 0 0 0.5em 0;
 }
+
 .month span {
   font-size: 2em;
   padding-right: 0.5em;
 }
-body,
-html {
-  max-width: 100vw;
-}
-main {
-  max-width: 100vw;
-  margin: 0 auto;
-}
+
 .grid.index {
+  -ms-grid-column: 1;
   grid-column-start: 1;
   grid-column-end: 4;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr) [5];
   grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 100px auto;
   grid-template-rows: 100px auto;
   min-height: 100vh;
   grid-template-areas: ". links links links ." "calendar current current current .";
 }
+
 main.grid {
   max-width: 100vw;
 }
+
 .links > .card {
   margin: 0.5em;
-  background-color: rgb(54, 131, 54);
+  background-color: #368336;
   color: white;
   text-decoration: none;
   font-size: 1em;
   width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
+
 .links > .card:hover {
   background-color: darkgreen;
 }
+
 .grid .col-2-3.apply {
+  -ms-grid-column: 1;
   grid-column-start: 1;
   grid-column-end: 4;
+  display: -ms-grid;
   display: grid;
   max-width: 100vw;
+  -ms-grid-columns: (1fr) [3];
   grid-template-columns: repeat(3, 1fr);
 }
+
 .card {
   margin: 1em;
   border-radius: 7px;
+  -webkit-box-shadow: 1px 1px 4px darkslategrey;
   box-shadow: 1px 1px 4px darkslategrey;
 }
 
 @media only screen and (max-width: 1199px) {
   .grid .col-2-3.apply {
+    -ms-grid-columns: auto;
     grid-template-columns: auto;
   }
   /* FIX THIS */
@@ -140,20 +211,24 @@ main.grid {
   /* .calendar.card {
     margin-left: 37vw;
   } */
-
   .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
-  .links > .card {
+  .links .card {
     width: 80%;
   }
   .grid.index {
+    -ms-grid-rows: auto auto auto;
     grid-template-rows: auto auto auto;
     grid-template-areas: "links links links links links" ". calendar calendar calendar ." ". current current current .";
   }
-
   .month {
     width: 50%;
   }
@@ -161,10 +236,16 @@ main.grid {
 
 @media only screen and (max-width: 1190px) {
   .calendar.card section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .current-events > section {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     min-width: 80vw;
   }
@@ -180,9 +261,13 @@ main.grid {
     height: 50%;
   }
   .otherlinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .otherlinks a {
     width: 50%;
   }
 }
+/*# sourceMappingURL=style.css.map */
