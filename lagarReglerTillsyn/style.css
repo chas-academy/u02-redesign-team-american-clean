@@ -13,7 +13,7 @@ main {
   min-width: 400px;
 }
 
-.link-list h3 {
+.link-list h2 {
   border-bottom: 2px solid black;
   padding-bottom: 0.5em;
 }
@@ -66,7 +66,7 @@ main {
   display: inline-block;
 }
 
-.icons h4 {
+.icons h3 {
   text-align: center;
   font-size: 1.1em;
   border-bottom: 1px solid grey;
