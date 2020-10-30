@@ -1,6 +1,10 @@
+/* This file applies sitewide */
+
 @import url("grid.css");
 @import url("components.css");
 @import url("/templates/share/share.css");
+
+/* Reset browser specific settings */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +14,7 @@
 
 body {
   background: #ebebd3;
+  font-family: sans-serif;
 }
 
 main {
