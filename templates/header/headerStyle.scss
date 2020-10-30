@@ -72,6 +72,10 @@ body {
     transition: color 0.3s ease-in-out, border-bottom 0.5s ease-in-out;
   }
 }
+a.currentPage {
+  color: yellow;
+  border-bottom: 2px solid yellow;
+}
 #smalllogo {
   max-height: 70px;
   display: none;
