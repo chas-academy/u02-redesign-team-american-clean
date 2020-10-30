@@ -26,16 +26,6 @@ article {
     text-align: left;
   }
 }
-
-// article span {
-//   margin-top: auto;
-//   text-align: left;
-//   width: 100%;
-// }
-// article h4 {
-//   width: 100%;
-//   text-align: left;
-// }
 .current-events {
   grid-area: current;
   section {
@@ -66,20 +56,6 @@ article {
     margin: 1em;
   }
 }
-// .otherlinks a {
-//   width: 25%;
-//   margin: 1em;
-//   /* color: black; */
-// }
-// .current-events > section {
-//   /* THIS IS THE POSTS GRID, SHOULD BE WIDER ALSO SHOULD BE RESPONSIVE HAHA */
-//   /* max-width: 80vw; */
-//   width: 100%;
-//   margin: 0 auto;
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-template-rows: auto;
-// }
 .thumbnail {
   height: 10vw;
   width: 18vw;
@@ -97,10 +73,7 @@ article {
     flex-direction: column;
   }
 }
-// .calendar.card section {
-//   display: flex;
-//   flex-direction: column;
-// }
+
 .month {
   padding: 0.5em;
   ul {
@@ -115,18 +88,6 @@ article {
     padding-right: 0.5em;
   }
 }
-// .month ul {
-//   list-style-type: none;
-// }
-// .month h4 {
-//   border-bottom: 2px solid black;
-//   margin: 0 0 0.5em 0;
-// }
-// .month span {
-//   font-size: 2em;
-//   padding-right: 0.5em;
-// }
-
 .grid.index {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -141,21 +102,15 @@ main.grid {
 }
 .links > .card {
   margin: 0.5em;
-  background-color: rgb(54, 131, 54);
-  color: white;
+  background-color: #3c3c3b;
   text-decoration: none;
   font-size: 1em;
   width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover {
-    background-color: darkgreen;
-  }
 }
-// .links > .card:hover {
-//   background-color: darkgreen;
-// }
+
 .grid .col-2-3.apply {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -177,9 +132,6 @@ main.grid {
   .current-events.card {
     margin: 0 2em;
   }
-  /* .calendar.card {
-    margin-left: 37vw;
-  } */
 
   .links {
     flex-direction: column;
@@ -189,9 +141,6 @@ main.grid {
       width: 80%;
     }
   }
-  //   .links > .card {
-  //     width: 80%;
-  //   }
   .grid.index {
     grid-template-rows: auto auto auto;
     grid-template-areas: "links links links links links" ". calendar calendar calendar ." ". current current current .";
@@ -202,10 +151,14 @@ main.grid {
   }
 }
 
-@media only screen and (max-width: 1190px) {
+@media only screen and (max-width: 1199px) {
   .calendar.card section {
     flex-direction: row;
     justify-content: center;
+  }
+  div.current-events.card {
+    min-width: 85vw;
+    margin: 1em 0; //unfortunate
   }
   .current-events > section {
     grid-template-columns: 1fr;

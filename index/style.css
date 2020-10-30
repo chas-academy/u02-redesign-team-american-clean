@@ -161,8 +161,7 @@ main.grid {
 
 .links > .card {
   margin: 0.5em;
-  background-color: #368336;
-  color: white;
+  background-color: #3c3c3b;
   text-decoration: none;
   font-size: 1em;
   width: 25%;
@@ -175,10 +174,6 @@ main.grid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.links > .card:hover {
-  background-color: darkgreen;
 }
 
 .grid .col-2-3.apply {
@@ -208,9 +203,6 @@ main.grid {
   .current-events.card {
     margin: 0 2em;
   }
-  /* .calendar.card {
-    margin-left: 37vw;
-  } */
   .links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -234,7 +226,7 @@ main.grid {
   }
 }
 
-@media only screen and (max-width: 1190px) {
+@media only screen and (max-width: 1199px) {
   .calendar.card section {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -243,6 +235,10 @@ main.grid {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  div.current-events.card {
+    min-width: 85vw;
+    margin: 1em 0;
   }
   .current-events > section {
     -ms-grid-columns: 1fr;
