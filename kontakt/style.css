@@ -2,22 +2,25 @@ body {
     text-align: center;
 }
 
-.sec {
-    background-color: yellow;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px black;
-    padding: 10px;
-}
-
 .darkSec {
     color: black;
-    background-color: white;
+    background-color: #fff;
     box-shadow: 1px 1px 3px black;
     padding: 10px;
-    border-radius: 5px;
-    margin:auto;
+    border-radius: 7px;
+    margin: auto;
     margin-bottom: 2vh;
     margin-top: 2vh;
+}
+
+textarea {
+    width: 96%;
+    min-height: 10vh;
+}
+
+.noNothing {
+    padding: 0px;
+    margin: 0px;
 }
 
 @media screen and (min-width:801px) {
@@ -39,13 +42,40 @@ body {
     #kontaktaBild {
         width: 40vw;
     }
+    .makeBodyMoreNarrow {
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+    .icons {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
 }
-    @media screen and (max-width: 800px) {
-       .twoByTwo section {
-            margin-bottom:1vh;
-       }
-       #kontaktaBild {
+
+@media screen and (max-width: 800px) {
+    .twoByTwo section {
+        margin-bottom: 1vh;
+    }
+    #kontaktaBild {
         width: 70vw;
     }
+    .makeBodyMoreNarrow {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
-    
+    .icons {
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 999px) and (min-width:801px) {
+    .grid {
+        -ms-grid-columns: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid .col-2-3 {
+        -ms-grid-column: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
