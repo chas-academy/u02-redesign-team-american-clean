@@ -1,217 +1,266 @@
 <!DOCTYPE html>
 <html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/templates/header/headerStyle.css" />
+    <link rel="stylesheet" href="/templates/footer/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/061e52cdfe.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Publikationer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/templates/header/headerStyle.css" />
-  <link rel="stylesheet" href="/templates/footer/footer.css" />
-  <script src="https://kit.fontawesome.com/061e52cdfe.js" crossorigin="anonymous"></script>
-  <title>Publikationer</title>
-</head>
-
-<body>
-  <header class="topHeader">
-    <a href="/index/index.html">
-      <img id="biglogo" src="/templates/header/myh_logo_white_big_shaded.png" alt="myh.se">
-      <img id="smalllogo" src="/templates/header/myh_logo_white_big_shaded_small.png" alt="myh.se">
-    </a>
-    <label for="ham-check" id="hamburger">&#9776;</label>
-    <input type="checkbox" name="ham-check" id="ham-check">
-    <nav aria-label="Huvudmeny">
-      <ul class="navSticky">
-        <li class="navItem"><a href="omOss.html">Om oss</a></li>
-        <li class="navItem">
-          <a href="verksamhetsOmraden.html">Verksamhetsområden</a>
-        </li>
-        <li class="navItem">
-          <a href="lagarReglerTillsyn.html">Lagar, Regler, Tillsyn</a>
-        </li>
-        <li class="navItem"><a href="statistik.html">Statistik</a></li>
-        <li class="navItem"><a class="currentPage" href="publikationer.html">Publikationer</a></li>
-        <li class="navItem"><a href="nyhetsrum.html">Nyhetsrum</a></li>
-        <li class="navItem"><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div role="banner" id="banner">
-    <nav aria-label="Sekundärmeny">
-      <ul>
-        <li><a aria-label="View this site in English" href="#">In English</a></li>
-        <li><a href="#">Lättläst</a></li>
-        <li><a href="#">Anpassa</a></li>
-        <li><a href="#">Mina sidor</a></li>
-      </ul>
-    </nav>
-    <form>
-      <label for="searchField"><i></i></label>
-      <input type="search" id="searchField" placeholder="Ange sökord" />
-      <a href="#" aria-label="Sök på webbplatsen" class="button"><i class="fas fa-search"></i> Sök</a>
-    </form>
-  </div>
-  <main class="grid gap">
-    <div class="card col-2-3">
-      <ul class="breadcrumbs">
-        <li><a href="#">Start</a></li>
-        <li>Publikationer</li>
-      </ul>
-      <h1>Publikationer</h1>
-      <p>Här hittar du Myndigheten för yrkeshögskolans rapporter, faktablad, broschyrer, informationsblad och
-        andra publikationer. Du kan välja typ av publikation, område och utgivningsår i rutan.</p>
-
-      <ul class="post-list">
-        <li>
-          <h3>Handbok för tillträde till yrkeshögskolan - 2020</h3>
-          <p>Utgiven: <time>2020-07-10</time></p>
-          <p>Denna handbok vänder sig i första hand till de som bedriver yrkeshögskoleutbildning och behöver
-            stöd...</p>
-          <p><a class="button" aria-label="Ladda ner Handbok för tillträde till yrkeshögskolan - 2020"
-              href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf">Ladda
-              ner</a></p>
-        </li>
-        <li>
-          <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och kulturutbildningar och
-            tolkutbildning inom folkbildningen</h3>
-          <p>Utgiven: <time>2020-06-09</time></p>
-          <p>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom de
-            utbildningsformer som...</p>
-          <p><a class="button" aria-label="Ladda ner Kvalitetskriterier för validering"
-              href="https://www.myh.se/Documents/Publikationer/Kvalitetskriterier_validering.pdf">Ladda
-              ner</a></p>
-        </li>
-        <li>
-          <h3>Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
-          <p>Utgiven: <time>2020-05-19</time></p>
-          <p>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett underlag för de
-            handläggare som...</p>
-          <p><a class="button" aria-label="Ladda ner Områdesanalys hälso- och sjukvård samt socialt arbete"
-              href="https://www.myh.se/Documents/Publikationer/Rapporter/2020/Analys_HalsoSjukvard2020.pdf">Ladda
-              ner</a></p>
-        </li>
-        <li>
-          <h3>Områdesanalys industri</h3>
-          <p>Utgiven: <time>2020-05-14</time></p>
-          <p>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett underlag för de
-            handläggare som...</p>
-          <p><a class="button" aria-label="Ladda ner Områdesanalys industri"
-              href="https://www.myh.se/Documents/Publikationer/Rapporter/2020/Industri-Analys2020.pdf">Ladda
-              ner</a></p>
-        </li>
-      </ul>
+  <body>
+    <header class="topHeader">
+      <a href="/index/index.html">
+        <img
+          id="biglogo"
+          src="/templates/header/myh_logo_white_big_shaded.png"
+          alt="myh.se"
+        />
+        <img
+          id="smalllogo"
+          src="/templates/header/myh_logo_white_big_shaded_small.png"
+          alt="myh.se"
+        />
+      </a>
+      <label for="ham-check" id="hamburger">&#9776;</label>
+      <input type="checkbox" name="ham-check" id="ham-check" />
+      <nav aria-label="Huvudmeny">
+        <ul class="navSticky">
+          <li class="navItem"><a href="omOss.html">Om oss</a></li>
+          <li class="navItem">
+            <a href="verksamhetsOmraden.html">Verksamhetsområden</a>
+          </li>
+          <li class="navItem">
+            <a href="lagarReglerTillsyn.html">Lagar, Regler, Tillsyn</a>
+          </li>
+          <li class="navItem"><a href="statistik.html">Statistik</a></li>
+          <li class="navItem">
+            <a class="currentPage" href="publikationer.html">Publikationer</a>
+          </li>
+          <li class="navItem"><a href="nyhetsrum.html">Nyhetsrum</a></li>
+          <li class="navItem"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div role="banner" id="banner">
+      <nav aria-label="Sekundärmeny">
+        <ul>
+          <li>
+            <a aria-label="View this site in English" href="#">In English</a>
+          </li>
+          <li><a href="#">Lättläst</a></li>
+          <li><a href="#">Anpassa</a></li>
+          <li><a href="#">Mina sidor</a></li>
+        </ul>
+      </nav>
+      <form>
+        <label for="searchField"><i></i></label>
+        <input type="search" id="searchField" placeholder="Ange sökord" />
+        <a href="#" aria-label="Sök på webbplatsen" class="button"
+          ><i class="fas fa-search"></i> Sök</a
+        >
+      </form>
     </div>
-    <aside>
-      <div class="sidebar">
-        <h3>Visa träffar av publikationstyp</h3>
-        <ul class="page-nav">
-          <li>Alla publikationstyper</li>
-          <li>Rapporter</li>
-          <li>Återrapportering av regeringsuppdrag</li>
-          <li>Informationsmaterial</li>
-          <li>Årsredovisningar</li>
+    <main class="grid gap">
+      <div class="card col-2-3">
+        <ul class="breadcrumbs">
+          <li><a href="#">Start</a></li>
+          <li>Publikationer</li>
         </ul>
+        <h1>Publikationer</h1>
+        <p>
+          Här hittar du Myndigheten för yrkeshögskolans rapporter, faktablad,
+          broschyrer, informationsblad och andra publikationer. Du kan välja typ
+          av publikation, område och utgivningsår i rutan.
+        </p>
 
-        <h3>Visa träffar från verksamhetsområde</h3>
-        <ul class="page-nav">
-          <li>Alla områden</li>
-          <li>Yrkeshögskolan</li>
-          <li>Konst- och kulturutbildningar</li>
-          <li>Tolkutbildningar</li>
-        </ul>
-
-        <h3>Visa träffar från år</h3>
-        <ul class="page-nav">
-          <li>Alla år</li>
-          <li>2020</li>
-          <li>2019</li>
-          <li>2018</li>
-          <li>2017</li>
-          <li>2016</li>
-          <li>2015</li>
+        <ul class="post-list">
+          <li>
+            <h3>Handbok för tillträde till yrkeshögskolan - 2020</h3>
+            <p>Utgiven: <time>2020-07-10</time></p>
+            <p>
+              Denna handbok vänder sig i första hand till de som bedriver
+              yrkeshögskoleutbildning och behöver stöd...
+            </p>
+            <p>
+              <a
+                class="button"
+                aria-label="Ladda ner Handbok för tillträde till yrkeshögskolan - 2020"
+                href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"
+                >Ladda ner</a
+              >
+            </p>
+          </li>
+          <li>
+            <h3>
+              Kvalitetskriterier för validering - yrkeshögskoleutbildning,
+              konst- och kulturutbildningar och tolkutbildning inom
+              folkbildningen
+            </h3>
+            <p>Utgiven: <time>2020-06-09</time></p>
+            <p>
+              Myndigheten har tagit fram kvalitetskriterier för arbetet med
+              validering inom de utbildningsformer som...
+            </p>
+            <p>
+              <a
+                class="button"
+                aria-label="Ladda ner Kvalitetskriterier för validering"
+                href="https://www.myh.se/Documents/Publikationer/Kvalitetskriterier_validering.pdf"
+                >Ladda ner</a
+              >
+            </p>
+          </li>
+          <li>
+            <h3>Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
+            <p>Utgiven: <time>2020-05-19</time></p>
+            <p>
+              Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som
+              ett underlag för de handläggare som...
+            </p>
+            <p>
+              <a
+                class="button"
+                aria-label="Ladda ner Områdesanalys hälso- och sjukvård samt socialt arbete"
+                href="https://www.myh.se/Documents/Publikationer/Rapporter/2020/Analys_HalsoSjukvard2020.pdf"
+                >Ladda ner</a
+              >
+            </p>
+          </li>
+          <li>
+            <h3>Områdesanalys industri</h3>
+            <p>Utgiven: <time>2020-05-14</time></p>
+            <p>
+              Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som
+              ett underlag för de handläggare som...
+            </p>
+            <p>
+              <a
+                class="button"
+                aria-label="Ladda ner Områdesanalys industri"
+                href="https://www.myh.se/Documents/Publikationer/Rapporter/2020/Industri-Analys2020.pdf"
+                >Ladda ner</a
+              >
+            </p>
+          </li>
         </ul>
       </div>
+      <aside>
+        <div class="sidebar">
+          <h3>Visa träffar av publikationstyp</h3>
+          <ul class="page-nav">
+            <li>Alla publikationstyper</li>
+            <li>Rapporter</li>
+            <li>Återrapportering av regeringsuppdrag</li>
+            <li>Informationsmaterial</li>
+            <li>Årsredovisningar</li>
+          </ul>
 
-      <aside class="icons card">
-        <h4>Dela</h4>
-        <ul>
-          <!--fill with font-awesome icons-->
-          <li><i class="fab fa-facebook-f"></i></li>
-          <li><i class="fab fa-twitter"></i></li>
-          <li><i class="far fa-envelope"></i></li>
-        </ul>
+          <h3>Visa träffar från verksamhetsområde</h3>
+          <ul class="page-nav">
+            <li>Alla områden</li>
+            <li>Yrkeshögskolan</li>
+            <li>Konst- och kulturutbildningar</li>
+            <li>Tolkutbildningar</li>
+          </ul>
+
+          <h3>Visa träffar från år</h3>
+          <ul class="page-nav">
+            <li>Alla år</li>
+            <li>2020</li>
+            <li>2019</li>
+            <li>2018</li>
+            <li>2017</li>
+            <li>2016</li>
+            <li>2015</li>
+          </ul>
+        </div>
+
+        <aside class="icons card">
+          <h4>Dela</h4>
+          <ul>
+            <!--fill with font-awesome icons-->
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="far fa-envelope"></i></li>
+          </ul>
+        </aside>
       </aside>
-    </aside>
-  </main>
-  <!-- flex footer-->
-  <footer class="footer">
-    <section class="kontakt-list">
-      <h3>Kontakt</h3>
-      <ul>
-        <li>
-          <h4>Digitalt kundforum</h4>
-          <p>
-            Har du en fråga? Besök vårt kundforum,
-            <a href="#">forum.myh.se</a>
-          </p>
-        </li>
-        <li>
-          <h4>Telefon</h4>
-          <p>
-            Ring vår växel
-            <a href="tel:010-2090100"> 010-209 01 00</a>. Växeln är öppen
-            vardagar 9.00 - 11.30, 13.00 - 15.00
-          </p>
-        </li>
-        <li>
-          <h4>Press</h4>
-          <p>
-            Presskontakter och pressmeddelanden finns i vårt
-            <a href="nyhetsrum.html">nyhetsrum</a>
-          </p>
-        </li>
-        <li>
-          <h4>E-post</h4>
-          <p>
-            Allmänna frågor / synpunkter:
-            <a href="mailto:info@myh.se">info@myh.se</a>
-            <br />
-            Registrator:
-            <a href="mailto:registrator@myh.se">registrator@myh.se</a>
-          </p>
-        </li>
-        <li>
-          <h4>Adress</h4>
-          <p>
-            Myndigheten för yrkeshögskolan <br />
-            Box 145 <br />
-            721 05 Västerås
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section class="about-list-footer">
-      <h3>Om webbplatsen</h3>
-      <ul class="page-nav">
-        <li><a href="#">Använda webbplatsen</a></li>
-        <li><a href="#">Om webbkakor (cookies)</a></li>
-        <li><a href="#">Webbkarta</a></li>
-        <li><a href="#">Tillgänglighetsredogörelse</a></li>
-      </ul>
-      <h3>Våra övriga webbplatser</h3>
-      <ul class="page-nav">
-        <li><a href="#">www.yrkeshogskolan.se</a></li>
-        <li><a href="#">www.konstkulturutbildning.se</a></li>
-        <li><a href="#">www.blitolk.nu</a></li>
-        <li><a href="#">www.seqf.se</a></li>
-      </ul>
-      <h3>Håll dig informerad</h3>
-      <h4>
-        <a><i class="fa fa-youtube"></i> Youtube</a>
-      </h4>
-      <h4>Ansvarig utgivare</h4>
-      <p>Thomas Persson, generaldirektör MYH.</p>
-    </section>
-  </footer>
-</body>
-
+    </main>
+    <!-- flex footer-->
+    <footer class="footer">
+      <section class="kontakt-list">
+        <h3>Kontakt</h3>
+        <ul>
+          <li>
+            <h4>Digitalt kundforum</h4>
+            <p>
+              Har du en fråga? Besök vårt kundforum,
+              <a href="#">forum.myh.se</a>
+            </p>
+          </li>
+          <li>
+            <h4>Telefon</h4>
+            <p>
+              Ring vår växel
+              <a href="tel:010-2090100"> 010-209 01 00</a>. Växeln är öppen
+              vardagar 9.00 - 11.30, 13.00 - 15.00
+            </p>
+          </li>
+          <li>
+            <h4>Press</h4>
+            <p>
+              Presskontakter och pressmeddelanden finns i vårt
+              <a href="nyhetsrum.html">nyhetsrum</a>
+            </p>
+          </li>
+          <li>
+            <h4>E-post</h4>
+            <p>
+              Allmänna frågor / synpunkter:
+              <a href="mailto:info@myh.se">info@myh.se</a>
+              <br />
+              Registrator:
+              <a href="mailto:registrator@myh.se">registrator@myh.se</a>
+            </p>
+          </li>
+          <li>
+            <h4>Adress</h4>
+            <p>
+              Myndigheten för yrkeshögskolan <br />
+              Box 145 <br />
+              721 05 Västerås
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="about-list-footer">
+        <h3>Om webbplatsen</h3>
+        <ul class="page-nav">
+          <li><a href="#">Använda webbplatsen</a></li>
+          <li><a href="#">Om webbkakor (cookies)</a></li>
+          <li><a href="#">Webbkarta</a></li>
+          <li><a href="#">Tillgänglighetsredogörelse</a></li>
+        </ul>
+        <h3>Våra övriga webbplatser</h3>
+        <ul class="page-nav">
+          <li><a href="#">www.yrkeshogskolan.se</a></li>
+          <li><a href="#">www.konstkulturutbildning.se</a></li>
+          <li><a href="#">www.blitolk.nu</a></li>
+          <li><a href="#">www.seqf.se</a></li>
+        </ul>
+        <h3>Håll dig informerad</h3>
+        <h4>
+          <a><i class="fa fa-youtube"></i> Youtube</a>
+        </h4>
+        <h4>Ansvarig utgivare</h4>
+        <p>Thomas Persson, generaldirektör MYH.</p>
+      </section>
+    </footer>
+  </body>
 </html>
