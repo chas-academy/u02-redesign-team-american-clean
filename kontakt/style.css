@@ -2,14 +2,13 @@ body {
     text-align: center;
 }
 
-.darkSec {
-    color: black;
-    background-color: #fff;
-    box-shadow: 1px 1px 3px black;
-    padding: 10px;
-    border-radius: 7px;
+.img-container {
+    max-width: 90%;
     margin: auto;
-    margin-bottom: 2vh;
+}
+
+.verticalMargin {
+    margin-bottom: 3vh;
     margin-top: 2vh;
 }
 
@@ -17,17 +16,13 @@ textarea {
     width: 96%;
     min-height: 10vh;
 }
-
-.noNothing {
-    padding: 0px;
-    margin: 0px;
+#map {
+    display: flex;
+    justify-content: center;
+    width:100%;
 }
-
 @media screen and (min-width:801px) {
-    #map {
-        display: flex;
-        justify-content: center;
-    }
+    
     .twoByTwo {
         display: flex;
         grid-column-start: 1;
@@ -65,6 +60,9 @@ textarea {
     }
     .icons {
         margin-top: 2vh;
+    }
+    .button {
+        margin-bottom: 1vh;
     }
 }
 
