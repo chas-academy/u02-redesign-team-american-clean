@@ -14,33 +14,46 @@
 
 <body>
     <header class="topHeader">
-        <a href="/index/index.html">
-            <img id="biglogo" src="/templates/header/myh_logo_white_big_shaded.png" alt="myh.se" />
-            <img id="smalllogo" src="/templates/header/myh_logo_white_big_shaded_small.png" alt="myh.se" />
-        </a>
-        <nav aria-label="Huvudmeny">
-            <label for="ham-check" id="hamburger">&#9776;</label>
-            <input type="checkbox" name="ham-check" id="ham-check" />
-            <ul class="navSticky">
-                <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
-                <li class="navItem">
-                    <a href="/verksamhetsOmraden/verksamhetsOmraden.html">Verksamhetsområden</a>
-                </li>
-                <li class="navItem">
-                    <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html">Lagar, Regler, Tillsyn</a>
-                </li>
-                <li class="navItem">
-                    <a href="/statistik/statistik.html">Statistik</a>
-                </li>
-                <li class="navItem">
-                    <a href="/publikationer/publikationer.html">Publikationer</a>
-                </li>
-                <li class="navItem">
-                    <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
-                </li>
-                <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+      <a href="/index/index.html" aria-label="Till startsidan">
+        <img
+          id="biglogo"
+          src="/templates/header/myh_logo_white_big_shaded.png"
+          alt="myh.se"
+        />
+        <img
+          id="smalllogo"
+          src="/templates/header/myh_logo_white_big_shaded_small.png"
+          alt="myh.se"
+        />
+      </a>
+
+      <nav aria-label="Huvudmeny">
+        <label for="ham-check" id="hamburger">&#9776;</label>
+        <input type="checkbox" name="ham-check" id="ham-check" />
+        <ul class="navSticky">
+          <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
+          <li class="navItem">
+            <a href="/verksamhetsOmraden/verksamhetsOmraden.html"
+              >Verksamhetsområden</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html"
+              >Lagar, Regler, Tillsyn</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="/statistik/statistik.html">Statistik</a>
+          </li>
+          <li class="navItem">
+            <a href="/publikationer/publikationer.html">Publikationer</a>
+          </li>
+          <li class="navItem">
+            <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
+          </li>
+          <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
     <div role="banner" id="banner">
         <nav aria-label="Sekundärmeny">
@@ -61,9 +74,6 @@
     </form>
     </div>
     <main class="makeBodyMoreNarrow">
-        
-            
-            
                 <section class="card verticalMargin">
                     <ul class="breadcrumbs">
                         <li><a href="/index/index.html">Start</a></li>

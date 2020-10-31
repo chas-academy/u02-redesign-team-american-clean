@@ -1,79 +1,78 @@
 body {
-    text-align: center;
+  text-align: center;
 }
 
 .img-container {
-    max-width: 90%;
-    margin: auto;
+  max-width: 90%;
+  margin: auto;
 }
 
 .verticalMargin {
-    margin-bottom: 3vh;
-    margin-top: 2vh;
+  margin-bottom: 3vh;
+  margin-top: 2vh;
 }
 
 textarea {
-    width: 96%;
-    min-height: 10vh;
+  width: 96%;
+  min-height: 10vh;
 }
 #map {
-    display: flex;
-    justify-content: center;
-    width:100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-@media screen and (min-width:801px) {
-    
-    .twoByTwo {
-        display: flex;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .twoByTwo section {
-        width: 22vw;
-        box-shadow: 1px 1px 3px black;
-    }
-    #kontaktaBild {
-        width: 40vw;
-    }
-    .makeBodyMoreNarrow {
-        margin-left: 7.5%;
-        margin-right: 7.5%;
-    }
-    .icons {
-        margin-top: 20%;
-        margin-bottom: 20%;
-    }
+@media screen and (min-width: 801px) {
+  .twoByTwo {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .twoByTwo section {
+    width: 22vw;
+    box-shadow: 1px 1px 3px black;
+  }
+  #kontaktaBild {
+    width: 40vw;
+  }
+  .makeBodyMoreNarrow {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+  }
+  .icons {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .twoByTwo section {
-        margin-bottom: 1vh;
-    }
-    #kontaktaBild {
-        width: 70vw;
-    }
-    .makeBodyMoreNarrow {
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    }
-    .icons {
-        margin-top: 2vh;
-    }
-    .button {
-        margin-bottom: 1vh;
-    }
+  .twoByTwo section {
+    margin-bottom: 1vh;
+  }
+  #kontaktaBild {
+    width: 70vw;
+  }
+  .makeBodyMoreNarrow {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  .icons {
+    margin-top: 2vh;
+  }
+  .button {
+    margin-bottom: 1vh;
+  }
 }
 
-@media screen and (max-width: 999px) and (min-width:801px) {
-    .grid {
-        -ms-grid-columns: auto;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .grid .col-2-3 {
-        -ms-grid-column: 1;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
+@media screen and (max-width: 999px) and (min-width: 801px) {
+  .grid {
+    -ms-grid-columns: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid .col-2-3 {
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
