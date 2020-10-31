@@ -20,13 +20,21 @@ body {
   max-width: 50%;
   min-width: 250px;
 }
+iframe {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
 
 .sidebar {
   color: white;
 }
 .sidebar a {
   text-decoration: none;
-  color: inherit;
+  color: white;
+}
+.sidebar > .page-nav > li > a {
+  color: white;
 }
 .share i {
   color: black;

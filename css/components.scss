@@ -1,7 +1,7 @@
 /* This file adds sitewide components like buttons, lists and breadcrumbs etc */
 
 $btn-default: #3c3c3b;
-$btn-primary: #00C84E;
+$btn-primary: #00c84e;
 $btn-font-color: #fff;
 
 .button {
@@ -32,13 +32,13 @@ $btn-font-color: #fff;
 }
 
 .img-container {
-    text-align: center;
-    background-color: yellow;
-    img {
-      width: 50%;
-      margin: 0 auto;
-    }
+  text-align: center;
+  background-color: yellow;
+  img {
+    width: 50%;
+    margin: 0 auto;
   }
+}
 
 .card {
   background: #fff;
@@ -55,7 +55,7 @@ $btn-font-color: #fff;
 .post-list li {
   padding: 15px;
   background: #f5d547;
-  color:#000;
+  color: #000;
   margin-bottom: 15px;
 }
 
@@ -97,23 +97,23 @@ ul {
 }
 
 .breadcrumbs {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
 
-    li {
-        float: left;
-    
-        &:not(:last-child)::after {
-            /* https://stackoverflow.com/questions/20782368/use-font-awesome-icon-as-css-content */
-            font-family: "Font Awesome 5 Free";
-            content: "\f054";
-            display: inline-block;
-            margin: 0 5px 0 5px;
-            vertical-align: middle;
-            font-weight: 900;
-          }
+  li {
+    float: left;
+
+    &:not(:last-child)::after {
+      /* https://stackoverflow.com/questions/20782368/use-font-awesome-icon-as-css-content */
+      font-family: "Font Awesome 5 Free";
+      content: "\f054";
+      display: inline-block;
+      margin: 0 5px 0 5px;
+      vertical-align: middle;
+      font-weight: 900;
     }
+  }
 }
 
 .page-nav li {
