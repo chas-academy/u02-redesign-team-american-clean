@@ -1,33 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/templates/header/headerStyle.css" />
-    <link rel="stylesheet" href="/templates/footer/footer.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/061e52cdfe.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<html lang="sv">
 
-  <body>
-    <!--HEADER AND BANNER HERE-->
-    <!--header, banner and breadcrumbs-->
-    <!---->
-    <header class="topHeader">
-      <img id="biglogo" src="/templates/header/myh_logo_white_big_shaded.png" />
-      <img
-        id="smalllogo"
-        src="/templates/header/myh_logo_white_big_shaded_small.png"
-      />
-      <label for="ham-check" id="hamburger">&#9776</label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/templates/header/headerStyle.css" />
+  <link rel="stylesheet" href="/templates/footer/footer.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/061e52cdfe.js" crossorigin="anonymous"></script>
+  <title>MYH.se | Hem</title>
+</head>
+
+<body>
+  <header class="topHeader">
+    <a href="/index/index.html">
+      <img id="biglogo" src="/templates/header/myh_logo_white_big_shaded.png" alt="myh.se" />
+      <img id="smalllogo" src="/templates/header/myh_logo_white_big_shaded_small.png" alt="myh.se" />
+    </a>
+
+    <nav aria-label="Huvudmeny">
+      <label for="ham-check" id="hamburger">&#9776;</label>
       <input type="checkbox" name="ham-check" id="ham-check" />
       <ul class="navSticky">
-        <li class="navItem"><a href="/index/index.html" class="currentPage">Start</a></li>
         <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
         <li class="navItem">
           <a href="/verksamhetsOmraden/verksamhetsOmraden.html">Verksamhetsområden</a>
@@ -35,218 +30,194 @@
         <li class="navItem">
           <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html">Lagar, Regler, Tillsyn</a>
         </li>
-        <li class="navItem"><a href="/statistik/statistik.html">Statistik</a></li>
-        <li class="navItem"><a href="/publikationer/publikationer.html">Publikationer</a></li>
-        <li class="navItem"><a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a></li>
+        <li class="navItem">
+          <a href="/statistik/statistik.html">Statistik</a>
+        </li>
+        <li class="navItem">
+          <a href="/publikationer/publikationer.html">Publikationer</a>
+        </li>
+        <li class="navItem">
+          <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
+        </li>
         <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
       </ul>
-    </header>
-    <div role="banner" id="banner">
+    </nav>
+  </header>
+  <div role="banner" id="banner">
+    <nav aria-label="Sekundärmeny">
       <ul>
-        <li><a href="#">In English</a></li>
+        <li>
+          <a aria-label="View this site in English" href="#">In English</a>
+        </li>
         <li><a href="#">Lättläst</a></li>
         <li><a href="#">Anpassa</a></li>
         <li><a href="#">Mina sidor</a></li>
       </ul>
-      <div>
-        <label for="searchField"><i></i></label>
-        <input type="search" name="searchField" placeholder="Ange sökord" />
-        <button type="submit">Sök</button>
-      </div>
-    </div>
-    <div class="hero-img">
-      <div class="hero-wrapper">
-        <h1>Välkommen till myh.se!</h1>
+    </nav>
+    <form>
+      <label for="searchField"><i></i></label>
+      <input type="search" id="searchField" placeholder="Ange sökord" />
+      <a href="#" aria-label="Sök på webbplatsen" class="button"><i class="fas fa-search"></i> Sök</a>
+    </form>
+  </div>
+  <div class="hero-img">
+    <div class="hero-wrapper">
+      <h1>Välkommen till myh.se!</h1>
 
-        <a href="#" class="button primary large">Våra verksamhetsområden</a>
-      </div>
+      <a href="/verksamhetsOmraden/verksamhetsOmraden.html" class="button primary large">Våra verksamhetsområden</a>
     </div>
-    <div id="breadcrumbs">
-      <p>
-        <a href="#">Start</a>
-        <!-- <a href="#">Nästa </a>
-        <a href="#">Nästa </a>
-        <a href="#">Nästa </a>
-        <a href="#">Nästa </a> -->
-      </p>
+  </div>
+
+  <main class="grid">
+    <div class="card col-2-3 apply">
+      <section>
+        <h3>Ansök om att bedriva utbildning</h3>
+        <ul class="page-nav">
+          <li><a href="#">Yrkeshögskoleutbildning</a></li>
+          <li><a href="#">Konst- och kulturutbildning</a></li>
+          <li><a href="#">Tolkutbildning</a></li>
+          <li><a href="#">Utbildning med endast tillsyn</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>För dig som bedriver utbildning</h3>
+        <ul class="page-nav">
+          <li>
+            <a href="#">Frågor och svar med anledning av coronaviruset</a>
+          </li>
+          <li>
+            <a href="#">Distansstöd - för anordnare som ställer om till
+              distansundervisning</a>
+          </li>
+          <li><a href="#">Yrkeshögskoleutbildning</a></li>
+          <li><a href="#">Konst - och kulturutbildning</a></li>
+          <li><a href="#">Tolkutbildning</a></li>
+          <li><a href="#">Utbildning med endast tillsyn</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>För företag och organisationer</h3>
+        <ul class="page-nav">
+          <p>
+            Arbetslivet är den främsta drivkraften bakom vilka
+            yrkeshögskoleutbildningar som startar och hur de är upplagda.
+          </p>
+          <li><a href="#">Påverka utbildningarna i yrkeshögskolan</a></li>
+          <li><a href="#">Verktyg för omställning</a></li>
+        </ul>
+      </section>
     </div>
-      <!-- <ul>
-        <li><a href="#">Yrkeshögskolan</a>/li></li>
-        <li><a href="#">Konst- och kulturutbildningar</a></li>
-        <li><a href="#">Tolkutbildningar</a></li>
-        <li><a href="#">Utbildningar med endast tillsyn</a></li>
-        <li><a href="#">SeQF</a></li>
-        <li><a href="#">Validering</a></li>
-      </ul> -->
-    <!--MAIN HERE? OR ABOVE INCLUDING VERKSAM. AND HERO IMG?-->
-    <main class="grid">
-      <div class="card col-2-3 apply">
+    <div class="index grid">
+      <section class="card calendar">
+        <h3>Kalender</h3>
         <section>
-          <h3>Ansök om att bedriva utbildning</h3>
-          <ul class="page-nav">
-            <li><a href="#">Yrkeshögskoleutbildning</a></li>
-            <li><a href="#">Konst- och kulturutbildning</a></li>
-            <li><a href="#">Tolkutbildning</a></li>
-            <li><a href="#">Utbildning med endast tillsyn</a></li>
-          </ul>
-        </section>
-        <section>
-          <h3>För dig som bedriver utbildning</h3>
-          <ul class="page-nav">
-            <li>
-              <a href="#">Frågor och svar med anledning av coronaviruset</a>
-            </li>
-            <li>
-              <a href="#"
-                >Distansstöd - för anordnare som ställer om till
-                distansundervisning</a
-              >
-            </li>
-            <li><a href="#">Yrkeshögskoleutbildning</a></li>
-            <li><a href="#">Konst - och kulturutbildning</a></li>
-            <li><a href="#">Tolkutbildning</a></li>
-            <li><a href="#">Utbildning med endast tillsyn</a></li>
-          </ul>
-        </section>
-        <section>
-          <h3>För företag och organisationer</h3>
-          <ul class="page-nav">
-            <p>
-              Arbetslivet är den främsta drivkraften bakom vilka
-              yrkeshögskoleutbildningar som startar och hur de är upplagda.
-            </p>
-            <li><a href="#">Påverka utbildningarna i yrkeshögskolan</a></li>
-            <li><a href="#">Verktyg för omställning</a></li>
-          </ul>
-        </section>
-      </div>
-      <div class="index grid">
-        <section class="card calendar">
-          <h3>Kalender</h3>
-          <section>
-            <div class="month">
-          <h4>Oktober</h4>
-          <ul>
-            <li>
-              <p>
-                <span>29</span>Webbinarium: Metodik för distansundervisning - så
-                här klarar du det (och lite till)!
-              </p>
-            </li>
-          </ul>
+          <div class="month">
+            <h4>Oktober</h4>
+            <ul>
+              <li>
+                <p>
+                  <span>29</span>Webbinarium: Metodik för distansundervisning - så
+                  här klarar du det (och lite till)!
+                </p>
+              </li>
+            </ul>
           </div>
           <div class="month">
-          <h4>November</h4>
-          <ul>
-            <li>
-              <p><span>03</span>Distansstöd webbcafé</p>
-            </li>
-            <li>
-              <p><span>05</span>Distansstöd webbcafé</p>
-            </li>
-          </ul>
-          <a href="#">Alla kalenderhändelser &gt;</a>
+            <h4>November</h4>
+            <ul>
+              <li>
+                <p><span>03</span>Distansstöd webbcafé</p>
+              </li>
+              <li>
+                <p><span>05</span>Distansstöd webbcafé</p>
+              </li>
+            </ul>
+            <a href="#">Alla kalenderhändelser &gt;</a>
           </div>
-          </section>
         </section>
-        <div class="current-events card">
-          <h3>Aktuellt</h3>
-          <section>
-            <article>
-              <img
-                class="thumbnail"
-                src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FScandinav%2FScandinav_royaltyfria%2FScandinav_DW1L.jpg&width=292&height=185&method=Crop"
-              />
-              <h4>Tre nya utbildningar till kontaktfolk inom yrkeshögskolan</h4>
-              <span>22 oktober 2020</span>
-              
-            </article>
-            <article>
-              <img
-                class="thumbnail"
-                src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2Fbreddabildentvapersoner.jpg&width=292&height=185&method=Crop"
-              />
-              <h4>
-                Yrkeshögskola - det populäraste alternativet för tjänstemän vid
-                omställning
-              </h4>
-              <span>16 oktober 2020</span>
-            
-            </article>
-            <article>
-              <img
-                class="thumbnail"
-                src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FScandinav%2FScandinav_royaltyfria%2Ftolk-myh.jpg&width=292&height=185&method=Crop"
-              />
-              <h4>
-                Ansök om statsbidrag för utbildning till teckenspråks- och
-                dövblindtolk samt skrivtolk
-              </h4>
-              <span>15 oktober 2020</span>
-            
-            </article>
-            <article>
-              <img
-                class="thumbnail"
-                src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FMina%2520sidor%2Fmina_sidor_Blur.png&width=125&height=125&method=Crop"
-              />
-              <h4>
-                Nu kan du administrera korta yrkeshögskoleutbildningar i Mina
-                sidor
-              </h4>
-              <span>16 oktober 2020</span>
-            
-            </article>
-            <article>
-              <img
-                class="thumbnail"
-                src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2Fdistansstod_nyhet.jpg&width=125&height=125&method=Crop"
-                alt=""
-              />
-              <h4>
-                Webbinarium: Metodik för distansundervisning – så här klarar du
-                det (och lite till)!
-              </h4>
-              <span>15 oktober 2020</span>
-             
-            </article>
-            <article>
-              <img
-                class="thumbnail"
-                src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FScandinav_Q7XR-liggande.jpg&width=125&height=125&method=Crop"
-                alt=""
-              />
-              <h4>Ny rapport synliggör social snedrekrytering</h4>
-              <span>14 oktober 2020</span>
-            
-            </article>
-            <article>
-              <img
-                class="thumbnail"
-                src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FScandinav%2FScandinav_royaltyfria%2FFotograf%2520Astrakan.jpg&width=125&height=125&method=Crop"
-              />
-              <h4>
-                Marknadsför YH-utbildningar som möjliga uppdragsutbildningar
-              </h4>
-              <span>7 oktober 2020</span>
-             
-            </article>
-            <article>
-              <img
-                class="thumbnail"
-                src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FYhDatorGron.png&width=125&height=125&method=Crop"
-              />
-              <h4>Rekordmånga ansökningar om att bedriva YH-utbildning</h4>
-              <span>30 september 2020</span>
-             
-            </article>
-           
+      </section>
+      <div class="current-events card">
+        <h3>Aktuellt</h3>
+        <section>
+          <article>
+            <img class="thumbnail"
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FScandinav%2FScandinav_royaltyfria%2FScandinav_DW1L.jpg&width=292&height=185&method=Crop" />
+            <h4>Tre nya utbildningar till kontaktfolk inom yrkeshögskolan</h4>
+            <span>22 oktober 2020</span>
 
-            <a href="#">Allt aktuellt &gt;</a>
-          </section>
-        </div>
+          </article>
+          <article>
+            <img class="thumbnail"
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2Fbreddabildentvapersoner.jpg&width=292&height=185&method=Crop" />
+            <h4>
+              Yrkeshögskola - det populäraste alternativet för tjänstemän vid
+              omställning
+            </h4>
+            <span>16 oktober 2020</span>
 
-        <!-- <section class="card">
+          </article>
+          <article>
+            <img class="thumbnail"
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FScandinav%2FScandinav_royaltyfria%2Ftolk-myh.jpg&width=292&height=185&method=Crop" />
+            <h4>
+              Ansök om statsbidrag för utbildning till teckenspråks- och
+              dövblindtolk samt skrivtolk
+            </h4>
+            <span>15 oktober 2020</span>
+
+          </article>
+          <article>
+            <img class="thumbnail"
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FMina%2520sidor%2Fmina_sidor_Blur.png&width=125&height=125&method=Crop" />
+            <h4>
+              Nu kan du administrera korta yrkeshögskoleutbildningar i Mina
+              sidor
+            </h4>
+            <span>16 oktober 2020</span>
+
+          </article>
+          <article>
+            <img class="thumbnail"
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2Fdistansstod_nyhet.jpg&width=125&height=125&method=Crop"
+              alt="" />
+            <h4>
+              Webbinarium: Metodik för distansundervisning – så här klarar du
+              det (och lite till)!
+            </h4>
+            <span>15 oktober 2020</span>
+
+          </article>
+          <article>
+            <img class="thumbnail"
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FScandinav_Q7XR-liggande.jpg&width=125&height=125&method=Crop"
+              alt="" />
+            <h4>Ny rapport synliggör social snedrekrytering</h4>
+            <span>14 oktober 2020</span>
+
+          </article>
+          <article>
+            <img class="thumbnail"
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FScandinav%2FScandinav_royaltyfria%2FFotograf%2520Astrakan.jpg&width=125&height=125&method=Crop" />
+            <h4>
+              Marknadsför YH-utbildningar som möjliga uppdragsutbildningar
+            </h4>
+            <span>7 oktober 2020</span>
+
+          </article>
+          <article>
+            <img class="thumbnail"
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FYhDatorGron.png&width=125&height=125&method=Crop" />
+            <h4>Rekordmånga ansökningar om att bedriva YH-utbildning</h4>
+            <span>30 september 2020</span>
+
+          </article>
+
+
+          <a href="#">Allt aktuellt &gt;</a>
+        </section>
+      </div>
+
+      <!-- <section class="card">
           <h3>Gå direkt till</h3>
           <ul>
             <li><a href="#">Lediga jobb</a></li>
@@ -256,7 +227,7 @@
             <li><a href="#">Nyhetsbrev</a></li>
           </ul>
         </section> -->
-        <!-- <section class="card">
+      <!-- <section class="card">
           <h3>Senaste publikationer</h3>
           <ul>
             <li>
@@ -277,88 +248,89 @@
           </ul>
           <a href="#">Fler publikationer &gt;</a>
         </section> -->
-        <section class="links">
-          <a href="#" class="card button large">Anmäl brister i en utbildning</a>
-          <a href="#" class="card button large">Hitta utbildningar</a>
-          <a href="#" class="card button large">För dig som är vägledare</a>
-          <a href="#" class="card button large">Lediga jobb</a>
-        </section>
-      </div>
-      <section class="otherlinks">
-        <a href="#" class="button primary">Epale - Digital mötesplats för vuxenutbildningar</a>
+      <section class="links">
+        <a href="#" class="card button large">Anmäl brister i en utbildning</a>
+        <a href="#" class="card button large">Hitta utbildningar</a>
+        <a href="#" class="card button large">För dig som är vägledare</a>
+        <a href="#" class="card button large">Lediga jobb</a>
+      </section>
+    </div>
+    <section class="otherlinks">
+      <a href="#" class="button primary">Epale - Digital mötesplats för vuxenutbildningar</a>
 
-        <a href="#" class="button primary">YA-delegationens material</a>
-      </section>
-    </main>
-    <!--footer below-->
-    <footer class="footer">
-      <section class="kontakt-list">
-        <h3>Kontakt</h3>
-        <ul>
-          <li>
-            <h4>Digitalt kundforum</h4>
-            <p>
-              Har du en fråga? Besök vårt kundforum,
-              <a href="#">forum.myh.se</a>
-            </p>
-          </li>
-          <li>
-            <h4>Telefon</h4>
-            <p>
-              Ring vår växel
-              <a href="tel: 010-2090100"> 010-209 01 00</a>. Växeln är öppen
-              vardagar 9.00 - 11.30, 13.00 - 15.00
-            </p>
-          </li>
-          <li>
-            <h4>Press</h4>
-            <p>
-              Presskontakter och pressmeddelanden finns i vårt
-              <a href="nyhetsrum.html">nyhetsrum</a>
-            </p>
-          </li>
-          <li>
-            <h4>E-post</h4>
-            <p>
-              Allmänna frågor/synpunkter:
-              <a href="mailto: info@myh.se">info@myh.se</a>
-              <br />
-              Registrator:
-              <a href="mailto: registrator@myh.se">registrator@myh.se</a>
-            </p>
-          </li>
-          <li>
-            <h4>Adress</h4>
-            <p>
-              Myndigheten för yrkeshögskolan <br />
-              Box 145 <br />
-              721 05 Västerås
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="about-list-footer">
-        <h3>Om webbplatsen</h3>
-        <ul>
-          <li><a href="#">Använda webbplatsen</a></li>
-          <li><a href="#">Om webbkakor (cookies)</a></li>
-          <li><a href="#">Webbkarta</a></li>
-          <li><a href="#">Tillgänglighetsredogörelse</a></li>
-        </ul>
-        <h3>Våra övriga webbplatser</h3>
-        <ul>
-          <li><a href="#">www.yrkeshogskolan.se</a></li>
-          <li><a href="#">www.konstkulturutbildning.se</a></li>
-          <li><a href="#">www.blitolk.nu</a></li>
-          <li><a href="#">www.seqf.se</a></li>
-        </ul>
-        <h3>Håll dig informerad</h3>
-        <h4>
-          <a><i class="fa fa-youtube"></i>Youtube</a>
-        </h4>
-        <h4>Ansvarig utgivare</h4>
-        <p>Thomas Persson, generaldirektör MYH.</p>
-      </section>
-    </footer>
-  </body>
+      <a href="#" class="button primary">YA-delegationens material</a>
+    </section>
+  </main>
+  <!-- flex footer-->
+  <footer class="footer">
+    <section class="kontakt-list">
+      <h3>Kontakt</h3>
+      <ul>
+        <li>
+          <h4>Digitalt kundforum</h4>
+          <p>
+            Har du en fråga? Besök vårt kundforum,
+            <a href="#">forum.myh.se</a>
+          </p>
+        </li>
+        <li>
+          <h4>Telefon</h4>
+          <p>
+            Ring vår växel
+            <a href="tel:010-2090100"> 010-209 01 00</a>. Växeln är öppen
+            vardagar 9.00 - 11.30, 13.00 - 15.00
+          </p>
+        </li>
+        <li>
+          <h4>Press</h4>
+          <p>
+            Presskontakter och pressmeddelanden finns i vårt
+            <a href="nyhetsrum.html">nyhetsrum</a>
+          </p>
+        </li>
+        <li>
+          <h4>E-post</h4>
+          <p>
+            Allmänna frågor / synpunkter:
+            <a href="mailto:info@myh.se">info@myh.se</a>
+            <br />
+            Registrator:
+            <a href="mailto:registrator@myh.se">registrator@myh.se</a>
+          </p>
+        </li>
+        <li>
+          <h4>Adress</h4>
+          <p>
+            Myndigheten för yrkeshögskolan <br />
+            Box 145 <br />
+            721 05 Västerås
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="about-list-footer">
+      <h3>Om webbplatsen</h3>
+      <ul class="page-nav">
+        <li><a href="#">Använda webbplatsen</a></li>
+        <li><a href="#">Om webbkakor (cookies)</a></li>
+        <li><a href="#">Webbkarta</a></li>
+        <li><a href="#">Tillgänglighetsredogörelse</a></li>
+      </ul>
+      <h3>Våra övriga webbplatser</h3>
+      <ul class="page-nav">
+        <li><a href="#">www.yrkeshogskolan.se</a></li>
+        <li><a href="#">www.konstkulturutbildning.se</a></li>
+        <li><a href="#">www.blitolk.nu</a></li>
+        <li><a href="#">www.seqf.se</a></li>
+      </ul>
+      <h3>Håll dig informerad</h3>
+      <h4>
+        <a><i class="fa fa-youtube"></i> Youtube</a>
+      </h4>
+      <h4>Ansvarig utgivare</h4>
+      <p>Thomas Persson, generaldirektör MYH.</p>
+    </section>
+  </footer>
+</body>
+
 </html>
