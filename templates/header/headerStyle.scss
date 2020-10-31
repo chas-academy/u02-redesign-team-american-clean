@@ -138,6 +138,11 @@ a.currentPage {
   }
 }
 @media only screen and (max-width: 1072px) {
+  [aria-label="Huvudmeny"] {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
   .navSticky {
     display: none;
     color: black;
