@@ -54,11 +54,11 @@
         <button type="submit">Sök</button>
       </div>
     </div>
-    <!-- <div class="hero-img"> -->
-      <div style="position: fixed; width: 100%; height: 100%">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dtYASMmsMlI?&autoplay=1" frameborder="0"allowfullscreen></iframe>
+        <div style="position: fixed; width: 100%; height: 100%">
+    <video class="paral-vid" muted autoplay loop playsinline src="/Computer - 47158.mp4">
+      </video>
   </div>
-      <div class="hero-wrapper">
+  <div class="hero-wrapper">
         <h1>Välkommen till myh.se!</h1>
 
         <a href="#" class="button primary large">Våra verksamhetsområden</a>
@@ -363,5 +363,9 @@
         <p>Thomas Persson, generaldirektör MYH.</p>
       </section>
     </footer>
+    <script>
+      document.querySelector('video').play();
+    </script>
+    <script src="/script.js"></script>
   </body>
 </html>

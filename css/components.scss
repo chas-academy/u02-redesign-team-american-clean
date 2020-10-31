@@ -79,16 +79,25 @@ $btn-font-color: #fff;
 
 .hero-wrapper {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background: rgba(60, 60, 59, 0.7);
   padding: 20px;
-  position: absolute;
-  top: 30vh;
+  z-index: 1;
+  position: relative;
+  width: 80vw;
+  // left: 10vw;
+  // top: 10vh;
   height: 350px;
+  margin: 5em auto;
   a {
     font-size: 1.2em;
+    z-index: 1;
+  }
+  h1 {
+    z-index: 1;
   }
 }
 
@@ -100,7 +109,6 @@ ul {
   display: inline-block;
   width: 100%;
   margin-bottom: 10px;
-
   li {
     float: left;
 

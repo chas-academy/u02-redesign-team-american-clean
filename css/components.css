@@ -85,6 +85,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -95,13 +99,20 @@
           justify-content: center;
   background: rgba(60, 60, 59, 0.7);
   padding: 20px;
-  position: absolute;
-  top: 30vh;
+  z-index: 1;
+  position: relative;
+  width: 80vw;
   height: 350px;
+  margin: 5em auto;
 }
 
 .hero-wrapper a {
   font-size: 1.2em;
+  z-index: 1;
+}
+
+.hero-wrapper h1 {
+  z-index: 1;
 }
 
 ul {
