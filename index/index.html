@@ -16,7 +16,7 @@
 
   <body>
     <header class="topHeader">
-      <a href="/index/index.html">
+      <a href="/index/index.html" aria-label="Till startsidan">
         <img
           id="biglogo"
           src="/templates/header/myh_logo_white_big_shaded.png"
@@ -70,11 +70,17 @@
       </nav>
       <form>
         <label for="searchField"><i></i></label>
-        <input type="search" id="searchField" placeholder="Ange sökord" />
+        <input type="search" aria-label="Sök på webbplatsen" value="Sök" />
         <a href="#" aria-label="Sök på webbplatsen" class="button"
           ><i class="fas fa-search"></i> Sök</a
         >
+        <!-- <input class="button" type="submit" value="Skicka"> -->
       </form>
+      <!-- <form>
+      <label for="searchField"><span>Sök</span></label>
+      <input type="search" id="searchField" placeholder="Ange sökord" />
+      <a href="#" aria-label="Sök på webbplatsen" class="button"><i class="fas fa-search"></i> Sök</a>
+    </form> -->
     </div>
     <div class="hero-img">
       <div class="hero-wrapper">
