@@ -109,6 +109,10 @@ a.currentPage {
   margin: -2px 10px 0 0;
 }
 
+#banner form label[for="searchField"] > span {
+  visibility: hidden;
+}
+
 #banner form input {
   border: 0;
   padding: 8px;
