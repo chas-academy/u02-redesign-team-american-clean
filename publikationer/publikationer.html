@@ -15,7 +15,7 @@
 
   <body>
     <header class="topHeader">
-      <a href="/index/index.html">
+      <a href="/index/index.html" aria-label="Till startsidan">
         <img
           id="biglogo"
           src="/templates/header/myh_logo_white_big_shaded.png"
@@ -27,23 +27,32 @@
           alt="myh.se"
         />
       </a>
-      <label for="ham-check" id="hamburger">&#9776;</label>
-      <input type="checkbox" name="ham-check" id="ham-check" />
+
       <nav aria-label="Huvudmeny">
+        <label for="ham-check" id="hamburger">&#9776;</label>
+        <input type="checkbox" name="ham-check" id="ham-check" />
         <ul class="navSticky">
-          <li class="navItem"><a href="omOss.html">Om oss</a></li>
+          <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
           <li class="navItem">
-            <a href="verksamhetsOmraden.html">Verksamhetsområden</a>
+            <a href="/verksamhetsOmraden/verksamhetsOmraden.html"
+              >Verksamhetsområden</a
+            >
           </li>
           <li class="navItem">
-            <a href="lagarReglerTillsyn.html">Lagar, Regler, Tillsyn</a>
+            <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html"
+              >Lagar, Regler, Tillsyn</a
+            >
           </li>
-          <li class="navItem"><a href="statistik.html">Statistik</a></li>
           <li class="navItem">
-            <a class="currentPage" href="publikationer.html">Publikationer</a>
+            <a href="/statistik/statistik.html">Statistik</a>
           </li>
-          <li class="navItem"><a href="nyhetsrum.html">Nyhetsrum</a></li>
-          <li class="navItem"><a href="kontakt.html">Kontakt</a></li>
+          <li class="navItem">
+            <a href="/publikationer/publikationer.html">Publikationer</a>
+          </li>
+          <li class="navItem">
+            <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
+          </li>
+          <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
     </header>
@@ -60,11 +69,17 @@
       </nav>
       <form>
         <label for="searchField"><i></i></label>
-        <input type="search" id="searchField" placeholder="Ange sökord" />
+        <input type="search" aria-label="Sök på webbplatsen" value="Sök" />
         <a href="#" aria-label="Sök på webbplatsen" class="button"
           ><i class="fas fa-search"></i> Sök</a
         >
+        <!-- <input class="button" type="submit" value="Skicka"> -->
       </form>
+      <!-- <form>
+      <label for="searchField"><span>Sök</span></label>
+      <input type="search" id="searchField" placeholder="Ange sökord" />
+      <a href="#" aria-label="Sök på webbplatsen" class="button"><i class="fas fa-search"></i> Sök</a>
+    </form> -->
     </div>
     <main class="grid gap">
       <div class="card col-2-3">
@@ -180,7 +195,7 @@
             <li>2015</li>
           </ul>
         </div>
-
+        <br />
         <aside class="icons card">
           <h4>Dela</h4>
           <ul>

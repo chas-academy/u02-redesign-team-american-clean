@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/templates/header/headerStyle.css" />
-    <link rel="stylesheet" href="/templates/footer/footer.css">
+    <link rel="stylesheet" href="/templates/footer/footer.css" />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/061e52cdfe.js"
@@ -18,52 +18,80 @@
     <!--header, banner and breadcrumbs-->
     <!---->
     <header class="topHeader">
-      <a href="/index/index.html">
-        <img id="biglogo" src="/templates/header/myh_logo_white_big_shaded.png">
-        <img id="smalllogo"src="/templates/header/myh_logo_white_big_shaded_small.png">
+      <a href="/index/index.html" aria-label="Till startsidan">
+        <img
+          id="biglogo"
+          src="/templates/header/myh_logo_white_big_shaded.png"
+          alt="myh.se"
+        />
+        <img
+          id="smalllogo"
+          src="/templates/header/myh_logo_white_big_shaded_small.png"
+          alt="myh.se"
+        />
       </a>
-            <label for="ham-check" id="hamburger">&#9776</label>
-      <input type="checkbox" name="ham-check" id="ham-check">
-      <ul class="navSticky">
-        <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
-        <li class="navItem">
-          <a href="/verksamhetsOmraden/verksamhetsOmraden.html">Verksamhetsområden</a>
-        </li>
-        <li class="navItem">
-          <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html" class="currentPage">Lagar, Regler, Tillsyn</a>
-        </li>
-        <li class="navItem"><a href="/statistik/statistik.html">Statistik</a></li>
-        <li class="navItem"><a href="/publikationer/publikationer.html">Publikationer</a></li>
-        <li class="navItem"><a href="/nyhetsRum/nyhetsRum.css">Nyhetsrum</a></li>
-        <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
-      </ul>
+
+      <nav aria-label="Huvudmeny">
+        <label for="ham-check" id="hamburger">&#9776;</label>
+        <input type="checkbox" name="ham-check" id="ham-check" />
+        <ul class="navSticky">
+          <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
+          <li class="navItem">
+            <a href="/verksamhetsOmraden/verksamhetsOmraden.html"
+              >Verksamhetsområden</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html"
+              >Lagar, Regler, Tillsyn</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="/statistik/statistik.html">Statistik</a>
+          </li>
+          <li class="navItem">
+            <a href="/publikationer/publikationer.html">Publikationer</a>
+          </li>
+          <li class="navItem">
+            <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
+          </li>
+          <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
     <div role="banner" id="banner">
-      <ul>
-        <li><a href="#">In English</a></li>
-        <li><a href="#">Lättläst</a></li>
-        <li><a href="#">Anpassa</a></li>
-        <li><a href="#">Mina sidor</a></li>
-      </ul>
+      <nav aria-label="Sekundärmeny">
+        <ul>
+          <li>
+            <a aria-label="View this site in English" href="#">In English</a>
+          </li>
+          <li><a href="#">Lättläst</a></li>
+          <li><a href="#">Anpassa</a></li>
+          <li><a href="#">Mina sidor</a></li>
+        </ul>
+      </nav>
       <form>
-      <label for="searchField"><i></i></label>
-      <input type="search" name="searchField" placeholder="Ange sökord" />
-      <a type="submit" aria-label="Sök på webbplatsen" class="button"><i class="fas fa-search"></i> Sök</a>
+        <label for="searchField"><i></i></label>
+        <input type="search" aria-label="Sök på webbplatsen" value="Sök" />
+        <a href="#" aria-label="Sök på webbplatsen" class="button"
+          ><i class="fas fa-search"></i> Sök</a
+        >
+        <!-- <input class="button" type="submit" value="Skicka"> -->
       </form>
+      <!-- <form>
+      <label for="searchField"><span>Sök</span></label>
+      <input type="search" id="searchField" placeholder="Ange sökord" />
+      <a href="#" aria-label="Sök på webbplatsen" class="button"><i class="fas fa-search"></i> Sök</a>
+    </form> -->
     </div>
-    <div id="breadcrumbs">
-      <p>
-        <a href="#">Start</a>
-        <a href="#">Nästa </a>
-        <a href="#">Nästa </a>
-        <a href="#">Nästa </a>
-        <a href="#">Nästa </a>
-      </p>
-    </div>
-<!--content below-->
+    <!--content below-->
     <main>
       <article class="grid grid-gap">
         <section class="col-2-3 card">
+          <ul class="breadcrumbs">
+            <li><a href="#">Start</a></li>
+            <li></li>
+          </ul>
           <h1>Lagar, regler, tillsyn</h1>
           <div class="img-container">
             <img
@@ -123,7 +151,7 @@
       </article>
     </main>
     <!--footer below-->
-     <footer class="footer">
+    <footer class="footer">
       <section class="kontakt-list">
         <h3>Kontakt</h3>
         <ul>

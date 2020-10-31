@@ -14,35 +14,49 @@
 
 <body>
     <header class="topHeader">
-        <a href="/index/index.html">
-            <img id="biglogo" src="/templates/header/myh_logo_white_big_shaded.png" alt="myh.se" />
-            <img id="smalllogo" src="/templates/header/myh_logo_white_big_shaded_small.png" alt="myh.se" />
-        </a>
-        <nav aria-label="Huvudmeny">
-            <label for="ham-check" id="hamburger">&#9776;</label>
-            <input type="checkbox" name="ham-check" id="ham-check" />
-            <ul class="navSticky">
-                <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
-                <li class="navItem">
-                    <a href="/verksamhetsOmraden/verksamhetsOmraden.html">Verksamhetsområden</a>
-                </li>
-                <li class="navItem">
-                    <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html">Lagar, Regler, Tillsyn</a>
-                </li>
-                <li class="navItem">
-                    <a href="/statistik/statistik.html">Statistik</a>
-                </li>
-                <li class="navItem">
-                    <a href="/publikationer/publikationer.html">Publikationer</a>
-                </li>
-                <li class="navItem">
-                    <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
-                </li>
-                <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+      <a href="/index/index.html" aria-label="Till startsidan">
+        <img
+          id="biglogo"
+          src="/templates/header/myh_logo_white_big_shaded.png"
+          alt="myh.se"
+        />
+        <img
+          id="smalllogo"
+          src="/templates/header/myh_logo_white_big_shaded_small.png"
+          alt="myh.se"
+        />
+      </a>
+
+      <nav aria-label="Huvudmeny">
+        <label for="ham-check" id="hamburger">&#9776;</label>
+        <input type="checkbox" name="ham-check" id="ham-check" />
+        <ul class="navSticky">
+          <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
+          <li class="navItem">
+            <a href="/verksamhetsOmraden/verksamhetsOmraden.html"
+              >Verksamhetsområden</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html"
+              >Lagar, Regler, Tillsyn</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="/statistik/statistik.html">Statistik</a>
+          </li>
+          <li class="navItem">
+            <a href="/publikationer/publikationer.html">Publikationer</a>
+          </li>
+          <li class="navItem">
+            <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
+          </li>
+          <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
     <div role="banner" id="banner">
+<<<<<<< HEAD
         <nav aria-label="Sekundärmeny">
             <ul>
                 <li>
@@ -59,6 +73,31 @@
             <a href="#" aria-label="Sök på webbplatsen" class="button"><i class="fas fa-search"></i> Sök</a>
             <!-- <input class="button" type="submit" value="Skicka"> -->
     </form>
+=======
+      <nav aria-label="Sekundärmeny">
+        <ul>
+          <li>
+            <a aria-label="View this site in English" href="#">In English</a>
+          </li>
+          <li><a href="#">Lättläst</a></li>
+          <li><a href="#">Anpassa</a></li>
+          <li><a href="#">Mina sidor</a></li>
+        </ul>
+      </nav>
+      <form>
+        <label for="searchField"><i></i></label>
+        <input type="search" aria-label="Sök på webbplatsen" value="Sök" />
+        <a href="#" aria-label="Sök på webbplatsen" class="button"
+          ><i class="fas fa-search"></i> Sök</a
+        >
+        <!-- <input class="button" type="submit" value="Skicka"> -->
+      </form>
+      <!-- <form>
+      <label for="searchField"><span>Sök</span></label>
+      <input type="search" id="searchField" placeholder="Ange sökord" />
+      <a href="#" aria-label="Sök på webbplatsen" class="button"><i class="fas fa-search"></i> Sök</a>
+    </form> -->
+>>>>>>> template-apply
     </div>
     <main>
         
