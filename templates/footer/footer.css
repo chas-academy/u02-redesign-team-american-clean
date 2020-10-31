@@ -6,6 +6,7 @@
   grid-template-columns: repeat(2, 1fr);
   padding-top: 1em;
   margin-top: 1em;
+  text-align: left;
 }
 .footer > section {
   position: relative;
