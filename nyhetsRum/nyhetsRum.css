@@ -50,6 +50,9 @@ iframe {
   width: 250px;
   margin: 1em 0;
 }
+iframe {
+  border: none;
+}
 
 .post-list {
   list-style-type: none;
@@ -62,7 +65,7 @@ iframe {
   color: black;
   margin: 1em 0; 
   /* box-shadow: 0px 0px 2px 2px grey; */
- 
+
 .post-list a {
   color: black;
 }
