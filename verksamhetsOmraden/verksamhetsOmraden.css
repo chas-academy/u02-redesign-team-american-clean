@@ -1,6 +1,43 @@
 .card {
   margin: 0.5em;
-  padding: 0.5em;
+  padding: 1em;
   box-shadow: 3px 3px 5px rgb(81, 104, 104);
   min-height: 350px;
+}
+
+div.intro.card {
+  min-height: 100px;
+  display: inline-block;
+}
+h2 a {
+  color: black;
+}
+
+.content {
+  padding: 0.5em;
+}
+@media only screen and (max-width: 1180px) {
+  div.grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .card {
+    display: flex;
+    min-height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .card {
+    flex-direction: column;
+    /* max-width: 80vw; */
+  }
+  .card > a {
+    margin: 0 auto;
+  }
+  .content p {
+    height: 100%;
+  }
 }
