@@ -2,14 +2,14 @@
 <html lang="sv">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nyhetsrum - MYH</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/templates/footer/footer.css" />
   <link rel="stylesheet" href="/templates/header/headerStyle.css" />
+  <link rel="stylesheet" href="/templates/footer/footer.css" />
   <link rel="stylesheet" href="nyhetsRum.css" />
   <script src="https://kit.fontawesome.com/061e52cdfe.js" crossorigin="anonymous"></script>
+  <title>MYH.se | Nyhetsrum</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
           <a href="/publikationer/publikationer.html">Publikationer</a>
         </li>
         <li class="navItem">
-          <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
+          <a href="/nyhetsRum/nyhetsRum.html" class="currentPage">Nyhetsrum</a>
         </li>
         <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
       </ul>
@@ -55,16 +55,12 @@
       </ul>
     </nav>
     <form>
-      <label for="searchField"><i></i></label>
-      <input type="search" aria-label="Sök på webbplatsen" value="Sök" />
-      <a href="#" aria-label="Sök på webbplatsen" class="button"><i class="fas fa-search"></i> Sök</a>
-      <!-- <input class="button" type="submit" value="Skicka"> -->
+      <label for="searchField">Sök</label>
+      <input type="search" aria-label="Ange söktext här" placeholder="Sök på webbplatsen" />
+
+      <button type="submit" aria-label="Klicka här för att söka" class="button"><i class="fas fa-search"></i>
+        Sök</a></button>
     </form>
-    <!-- <form>
-      <label for="searchField"><span>Sök</span></label>
-      <input type="search" id="searchField" placeholder="Ange sökord" />
-      <a href="#" aria-label="Sök på webbplatsen" class="button"><i class="fas fa-search"></i> Sök</a>
-    </form> -->
   </div>
   <div class="hero-img">
     <div class="hero-wrapper">
@@ -202,6 +198,7 @@
 
     </div>
   </main>
+  <!-- flex footer-->
   <footer class="footer">
     <section class="kontakt-list">
       <h3>Kontakt</h3>
@@ -217,7 +214,7 @@
           <h4>Telefon</h4>
           <p>
             Ring vår växel
-            <a href="tel: 010-2090100"> 010-209 01 00</a>. Växeln är öppen
+            <a href="tel:010-2090100"> 010-209 01 00</a>. Växeln är öppen
             vardagar 9.00 - 11.30, 13.00 - 15.00
           </p>
         </li>
@@ -231,11 +228,11 @@
         <li>
           <h4>E-post</h4>
           <p>
-            Allmänna frågor/synpunkter:
-            <a href="mailto: info@myh.se">info@myh.se</a>
+            Allmänna frågor / synpunkter:
+            <a href="mailto:info@myh.se">info@myh.se</a>
             <br />
             Registrator:
-            <a href="mailto: registrator@myh.se">registrator@myh.se</a>
+            <a href="mailto:registrator@myh.se">registrator@myh.se</a>
           </p>
         </li>
         <li>
@@ -250,14 +247,14 @@
     </section>
     <section class="about-list-footer">
       <h3>Om webbplatsen</h3>
-      <ul>
+      <ul class="page-nav">
         <li><a href="#">Använda webbplatsen</a></li>
         <li><a href="#">Om webbkakor (cookies)</a></li>
         <li><a href="#">Webbkarta</a></li>
         <li><a href="#">Tillgänglighetsredogörelse</a></li>
       </ul>
       <h3>Våra övriga webbplatser</h3>
-      <ul>
+      <ul class="page-nav">
         <li><a href="#">www.yrkeshogskolan.se</a></li>
         <li><a href="#">www.konstkulturutbildning.se</a></li>
         <li><a href="#">www.blitolk.nu</a></li>
@@ -265,7 +262,7 @@
       </ul>
       <h3>Håll dig informerad</h3>
       <h4>
-        <a><i class="fa fa-youtube"></i>Youtube</a>
+        <a><i class="fa fa-youtube"></i> Youtube</a>
       </h4>
       <h4>Ansvarig utgivare</h4>
       <p>Thomas Persson, generaldirektör MYH.</p>
