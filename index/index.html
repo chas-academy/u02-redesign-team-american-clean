@@ -68,13 +68,24 @@
           <li><a href="#">Mina sidor</a></li>
         </ul>
       </nav>
-    <form>
-      <label for="searchField">Sök</label>
-      <input type="search" aria-label="Ange söktext här" placeholder="Sök på webbplatsen" />
+      <form>
+        <label for="searchField">Sök</label>
+        <input
+          type="search"
+          id="searchField"
+          aria-label="Ange söktext här"
+          placeholder="Sök på webbplatsen"
+        />
 
-      <button type="submit" aria-label="Klicka här för att söka" class="button"><i class="fas fa-search"></i>
-        Sök</a></button>
-    </form>
+        <button
+          type="submit"
+          aria-label="Klicka här för att söka"
+          class="button"
+        >
+          <i class="fas fa-search"></i>
+          Sök
+        </button>
+      </form>
     </div>
     <div class="hero-img">
       <div class="hero-wrapper">
@@ -171,11 +182,11 @@
         </section>
         <section>
           <h2>För företag och organisationer</h2>
+          <p>
+            Arbetslivet är den främsta drivkraften bakom vilka
+            yrkeshögskoleutbildningar som startar och hur de är upplagda.
+          </p>
           <ul class="page-nav">
-            <p>
-              Arbetslivet är den främsta drivkraften bakom vilka
-              yrkeshögskoleutbildningar som startar och hur de är upplagda.
-            </p>
             <li>
               <a
                 href="#"
@@ -196,8 +207,8 @@
       <div class="index grid">
         <section class="card calendar">
           <h3>Kalender</h3>
-          <section>
-            <div class="month">
+          <div>
+            <section class="month">
               <h4>Oktober</h4>
               <ul>
                 <li>
@@ -207,8 +218,8 @@
                   </p>
                 </li>
               </ul>
-            </div>
-            <div class="month">
+            </section>
+            <section class="month">
               <h4>November</h4>
               <ul>
                 <li>
@@ -219,12 +230,12 @@
                 </li>
               </ul>
               <a href="#">Alla kalenderhändelser &gt;</a>
-            </div>
-          </section>
+            </section>
+          </div>
         </section>
-        <div class="current-events card">
+        <section class="current-events card">
           <h3>Aktuellt</h3>
-          <section>
+          <div>
             <article>
               <img
                 class="thumbnail"
@@ -313,10 +324,10 @@
             </article>
 
             <a href="#">Allt aktuellt &gt;</a>
-          </section>
-        </div>
+          </div>
+        </section>
 
-        <section class="links">
+        <div class="links">
           <a
             href="#"
             class="card button large"
@@ -341,9 +352,9 @@
             aria-label="Klicka här för att se info om lediga jobb"
             >Lediga jobb</a
           >
-        </section>
+        </div>
       </div>
-      <section class="otherlinks">
+      <div class="otherlinks">
         <a
           href="#"
           class="button primary"
@@ -356,7 +367,7 @@
           aria-label="Klicka här för att se YA-delagationens material"
           >YA-delegationens material</a
         >
-      </section>
+      </div>
     </main>
     <!-- flex footer-->
     <footer class="footer">
