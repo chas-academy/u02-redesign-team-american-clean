@@ -108,8 +108,6 @@ h2 {
   z-index: 1;
 }
 
-/* GET THIS CENTERRED ALONG WITH OTHER CARDS NEXT? */
-/* STYLE IN A ROW WITH ICONS */
 .calendar.card {
   max-height: 450px;
   -ms-grid-row: 2;
