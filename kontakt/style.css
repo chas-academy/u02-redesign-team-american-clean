@@ -36,10 +36,10 @@ textarea {
   #kontaktaBild {
     width: 40vw;
   }
-  .makeBodyMoreNarrow {
+  /* .makeBodyMoreNarrow {
     margin-left: 7.5%;
     margin-right: 7.5%;
-  }
+  } */
   .icons {
     margin-top: 20%;
     margin-bottom: 20%;
@@ -57,8 +57,8 @@ textarea {
     margin-left: 2.5%;
     margin-right: 2.5%;
   }
-  main{
-    width:95%;
+  main {
+    width: 95%;
   }
   .icons {
     margin-top: 2vh;
@@ -72,6 +72,12 @@ textarea {
   .grid {
     -ms-grid-columns: auto;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .grid > .card {
+    min-width: 25vw;
+  }
+  main {
+    width: 90%;
   }
   .grid .col-2-3 {
     -ms-grid-column: 1;
