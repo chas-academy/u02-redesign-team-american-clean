@@ -3,12 +3,6 @@ main {
   margin: 0 auto;
 }
 
-hr {
-  clear: both;
-  border: 5px solid transparent;
-  height: 4px;
-}
-
 .link-list {
   background-color: #464646;
   color: white;
@@ -35,6 +29,10 @@ hr {
 .link-list ul li a {
   color: white;
   text-decoration: none;
+}
+
+article.card {
+  background-color: #f5d547;
 }
 
 .col-2-3.card {

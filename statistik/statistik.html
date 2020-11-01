@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="statistik.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/templates/footer/footer.css">
     <link rel="stylesheet" href="/templates/header/headerStyle.css">
@@ -14,56 +14,80 @@
 </head>
 
 <body>
-    <header class="topHeader">
-        <img id="biglogo" src="/templates/header/myh_logo_white_big_shaded.png">
-        <img id="smalllogo" src="/templates/header/myh_logo_white_big_shaded_small.png">
-              <label for="ham-check" id="hamburger">&#9776;</label>
-        <input type="checkbox" name="ham-check" id="ham-check">
+        <header class="topHeader">
+      <a href="/index/index.html" aria-label="Till startsidan">
+        <img
+          id="biglogo"
+          src="/templates/header/myh_logo_white_big_shaded.png"
+          alt="myh.se"
+        />
+        <img
+          id="smalllogo"
+          src="/templates/header/myh_logo_white_big_shaded_small.png"
+          alt="myh.se"
+        />
+      </a>
+
+      <nav aria-label="Huvudmeny">
+        <label for="ham-check" id="hamburger">&#9776;</label>
+        <input type="checkbox" name="ham-check" id="ham-check" />
         <ul class="navSticky">
-          <li class="navItem"><a href="index.html">Start</a></li>
-          <li class="navItem"><a href="omOss.html">Om oss</a></li>
+          <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
           <li class="navItem">
-            <a href="verksamhetsOmraden.html">Verksamhetsområden</a>
+            <a href="/verksamhetsOmraden/verksamhetsOmraden.html"
+              >Verksamhetsområden</a
+            >
           </li>
           <li class="navItem">
-            <a href="lagarReglerTillsyn.html">Lagar, Regler, Tillsyn</a>
+            <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html"
+              >Lagar, Regler, Tillsyn</a
+            >
           </li>
-          <li class="navItem"><a href="statistik.html">Statistik</a></li>
-          <li class="navItem"><a href="publikationer.html">Publikationer</a></li>
-          <li class="navItem"><a href="nyhetsrum.html">Nyhetsrum</a></li>
-          <li class="navItem"><a href="kontakt.html">Kontakt</a></li>
+          <li class="navItem">
+            <a href="/statistik/statistik.html">Statistik</a>
+          </li>
+          <li class="navItem">
+            <a href="/publikationer/publikationer.html">Publikationer</a>
+          </li>
+          <li class="navItem">
+            <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
+          </li>
+          <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
         </ul>
-      </header>
-      <div role="banner" id="banner">
+      </nav>
+    </header>
+    <div role="banner" id="banner">
+      <nav aria-label="Sekundärmeny">
         <ul>
-          <li><a href="#">In English</a></li>
+          <li>
+            <a aria-label="View this site in English" href="#">In English</a>
+          </li>
           <li><a href="#">Lättläst</a></li>
           <li><a href="#">Anpassa</a></li>
           <li><a href="#">Mina sidor</a></li>
         </ul>
-        <div>
+      </nav>
+      <form>
         <label for="searchField"><i></i></label>
-        <input type="search" name="searchField" placeholder="Ange sökord" />
-        <button type="submit">Sök</button>
-        </div>
-      </div>
-      <div id="breadcrumbs">
-            <p>
-              <a href="#">Start</a>
-              <a href="#">Nästa </a>
-              <a href="#">Nästa </a>
-              <a href="#">Nästa </a>
-              <a href="#">Nästa </a>
-            </p>
-            </div>      
+        <input type="search" aria-label="Sök på webbplatsen" value="Sök" />
+        <a href="#" aria-label="Sök på webbplatsen" class="button"
+          ><i class="fas fa-search"></i> Sök</a
+        >
+      </form>
+    </div>
       <main id= "mainStatistik" class= "grid">
       
-        <section class="col-2-3">
+        <section class="col-2-3 card">
+          <ul class="breadcrumbs">
+          <li><a href="/index/index.html">Start</a></li>
+          <li>Statistik</li>
+        </ul>
             <h1>Statistik</h1>
             <!-- <img class="grid grid-gap"  -->
+            <div class="img-container">
             <img id="kartbild" src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FIllustrationer%2Fstatistik_webb.png&width=584&height=0&method=Box" alt="bild på svenska karta">
-            <article class="col-2-3 card">
-              <h3>Statistik</h3>
+           </div> <article class="col-2-3">
+              
                 <p>
                     Här hittar du statistik om yrkeshögskoleutbildningar, konst- och kulturutbildningar och utbildningar
                     med endast tillsyn samt tolkutbildningar inom folkbildningen.
@@ -73,21 +97,32 @@
 
                     Klicka på den utbildningsform du är intresserad av i menyn till höger.
                 </p>
-            </article>
+                </article>
+              </section>
+            
+            <aside id= "sidomeny" class="link-list sidebar card">
+           <h2>Statistik</h2>
+            <ul class="page-nav">
+                <li><a href="#">Yrkeshögskoleutbildningar</a></li>
+                <li><a href="#">Statistik om konst- och kulturutbildningar och utbildningar med endast tillsyn </a></li>
+                <li><a href="#">Statistik om tolkutbildningar</a></li>
+            </ul>
+        </aside>
             <article class="col-2-3 card">
-                <p>
+                
                     <h2>Faktablad med statistik </h2>
+                    <p>
                         Här kan du ladda ner faktablad med kortfattad statistik om yrkeshögskole-
                         utbildningar, konst- och kulturutbildningar samt tolkutbildningar.
-                        <hr>
+                        <br>
                         <a
                         href="https://www.myh.se/Documents/Statitik/Yrkesh%c3%b6gskoleutbildningar/Kortfattad%20statistik/Kortfattad_statistik_yrkeshogskolan_2019.pdf">Faktablad
                         med kortfattad statistik om yrkeshögskolan 2019</a>
-                        <hr>
+                        <br>
                         <a
                         href="https://www.myh.se/Documents/Statitik/Konst-och%20kulturutbildningar%20och%20vissa%20andra%20utbildningar/Konst-%20och%20kulturutbildningar/Kortfattad%20statistik/Kortfattad_statistik_konstkulturutbildningar_2019.pdf">Faktablad
                         med kortfattad statistik om konst- och kulturutbildningar 2019</a>
-                        <hr>
+                        <br>
                         <a
                         href="https://www.myh.se/Documents/Statitik/Tolkutbildningar%20inom%20folkbildningen/Kortfattad%20statistik/Kortfattad_statistik_tolkutbildningar_2019.pdf">Faktablad
                         med kortfattad statistik om tolkutbildningar 2019</a>
@@ -98,29 +133,21 @@
                     <p>
                         Via länkarna nedan hittar du Myndigheten för yrkeshögskolans senaste årsrapporter med samlad
                         statistik om de utbildningsformer som vi ansvarar för.
-                        <hr>
+                        <br>
                         <a href="https://www.myh.se/Publikationer/2020/Statistisk-arsrapport-2020/">Statistisk
                             årsrapport 2020</a>
-                        <hr>
+                        <br>
                         <a href="https://www.myh.se/Publikationer/2019/Statistisk-arsrapport-2019/">Statistisk
                             årsrapport 2019</a>
-                        <hr>
+                        <br>
                         <a href="https://www.myh.se/Publikationer/2018/Statistisk-arsrapport-2018/">Statistisk
                             årsrapport 2018</a>
-                        <hr>
+                        <br>
                         <a href="https://www.myh.se/Publikationer/2017/Statistisk-arsrapport-2017/">Statistisk
                             årsrapport 2017</a>
                     </p>
                 </article>
             </article>
-        </section>
-         <aside id= "sidomeny">
-            <ul>
-                <li><a href="#">Yrkeshögskoleutbildningar</a></li>
-                <li><a href="#">Statistik om konst- och kulturutbildningar och utbildningar med endast tillsyn </a></li>
-                <li><a href="#">Statistik om tolkutbildningar</a></li>
-            </ul>
-        </aside>
     </main>
         <footer class="footer">
             <section class="kontakt-list">
