@@ -1,249 +1,298 @@
 <!DOCTYPE html>
 <html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/templates/footer/footer.css" />
+    <link rel="stylesheet" href="/templates/header/headerStyle.css" />
+    <link rel="stylesheet" href="verksamhetsOmraden.css" />
+    <title>MYH.se | Verksamhetsområden</title>
+    <script
+      src="https://kit.fontawesome.com/061e52cdfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/templates/footer/footer.css" />
-  <link rel="stylesheet" href="/templates/header/headerStyle.css" />
-  <link rel="stylesheet" href="verksamhetsOmraden.css" />
-  <title>MYH.se | Verksamhetsområden</title>
-  <script src="https://kit.fontawesome.com/061e52cdfe.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <header class="topHeader">
+      <a href="/index/index.html" aria-label="Till startsidan">
+        <img
+          id="biglogo"
+          src="/templates/header/myh_logo_white_big_shaded.png"
+          alt="myh.se"
+        />
+        <img
+          id="smalllogo"
+          src="/templates/header/myh_logo_white_big_shaded_small.png"
+          alt="myh.se"
+        />
+      </a>
 
-<body>
-  <header class="topHeader">
-    <a href="/index/index.html" aria-label="Till startsidan">
-      <img id="biglogo" src="/templates/header/myh_logo_white_big_shaded.png" alt="myh.se" />
-      <img id="smalllogo" src="/templates/header/myh_logo_white_big_shaded_small.png" alt="myh.se" />
-    </a>
+      <nav aria-label="Huvudmeny">
+        <label for="ham-check" id="hamburger">&#9776;</label>
+        <input type="checkbox" name="ham-check" id="ham-check" />
+        <ul class="navSticky">
+          <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
+          <li class="navItem">
+            <a
+              href="/verksamhetsOmraden/verksamhetsOmraden.html"
+              class="currentPage"
+              >Verksamhetsområden</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html"
+              >Lagar, Regler, Tillsyn</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="/statistik/statistik.html">Statistik</a>
+          </li>
+          <li class="navItem">
+            <a href="/publikationer/publikationer.html">Publikationer</a>
+          </li>
+          <li class="navItem">
+            <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
+          </li>
+          <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div role="banner" id="banner">
+      <nav aria-label="Sekundärmeny">
+        <ul>
+          <li>
+            <a aria-label="View this site in English" href="#">In English</a>
+          </li>
+          <li><a href="#">Lättläst</a></li>
+          <li><a href="#">Anpassa</a></li>
+          <li><a href="#">Mina sidor</a></li>
+        </ul>
+      </nav>
+      <form>
+        <label for="searchField">Sök</label>
+        <input
+          type="search"
+          id="searchField"
+          aria-label="Ange söktext här"
+          placeholder="Sök på webbplatsen"
+        />
 
-    <nav aria-label="Huvudmeny">
-      <label for="ham-check" id="hamburger">&#9776;</label>
-      <input type="checkbox" name="ham-check" id="ham-check" />
-      <ul class="navSticky">
-        <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
-        <li class="navItem">
-          <a href="/verksamhetsOmraden/verksamhetsOmraden.html" class="currentPage">Verksamhetsområden</a>
-        </li>
-        <li class="navItem">
-          <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html">Lagar, Regler, Tillsyn</a>
-        </li>
-        <li class="navItem">
-          <a href="/statistik/statistik.html">Statistik</a>
-        </li>
-        <li class="navItem">
-          <a href="/publikationer/publikationer.html">Publikationer</a>
-        </li>
-        <li class="navItem">
-          <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
-        </li>
-        <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div role="banner" id="banner">
-    <nav aria-label="Sekundärmeny">
-      <ul>
-        <li>
-          <a aria-label="View this site in English" href="#">In English</a>
-        </li>
-        <li><a href="#">Lättläst</a></li>
-        <li><a href="#">Anpassa</a></li>
-        <li><a href="#">Mina sidor</a></li>
-      </ul>
-    </nav>
-    <form>
-      <label for="searchField">Sök</label>
-      <input type="search" aria-label="Ange söktext här" placeholder="Sök på webbplatsen" />
-
-      <button type="submit" aria-label="Klicka här för att söka" class="button"><i class="fas fa-search"></i>
-        Sök</a></button>
-    </form>
-  </div>
-  <main>
-    <div class="card intro">
-      <ul class="breadcrumbs">
-        <li><a href="/index/index.html">Start</a></li>
-        <li>Verksamhetsområden</li>
-      </ul>
-      <h1>Verksamhetsområden</h1>
-      <div>
-        <p>
-          Myndigheten för yrkeshögskolan har i uppdrag att ansvara för frågor
-          som rör utbildningar inom yrkeshögskolan. Dessutom ansvarar vi för
-          ytterligare frågor inom utbildningsområdet.
-        </p>
-      </div>
+        <button
+          type="submit"
+          aria-label="Klicka här för att söka"
+          class="button"
+        >
+          <i class="fas fa-search"></i>
+          Sök
+        </button>
+      </form>
     </div>
-    <div class="grid">
-      <div class="card">
-        <a href="/Verksamhetsomraden/Yrkeshogskolan/"><img src="/index/bricks-2181920_1280.jpg"
-            alt="Yrkeshögskolan klassrum" /></a>
-        <section class="content">
-          <h2>
-            <a href="/Verksamhetsomraden/Yrkeshogskolan/">Yrkeshögskolan <i class="icon-gl-chevron-right"></i></a>
-          </h2>
-
+    <main>
+      <div class="card intro">
+        <ul class="breadcrumbs">
+          <li><a href="/index/index.html">Start</a></li>
+          <li>Verksamhetsområden</li>
+        </ul>
+        <h1>Verksamhetsområden</h1>
+        <div>
           <p>
-            Utbildningar som svarar mot arbetslivets behov av kvalificerad
-            yrkeskompetens och som drivs i nära samverkan med företag och
-            andra arbetsgivare.
+            Myndigheten för yrkeshögskolan har i uppdrag att ansvara för frågor
+            som rör utbildningar inom yrkeshögskolan. Dessutom ansvarar vi för
+            ytterligare frågor inom utbildningsområdet.
           </p>
-        </section>
+        </div>
       </div>
+      <div class="grid">
+        <div class="card">
+          <a href="/Verksamhetsomraden/Yrkeshogskolan/"
+            ><img
+              src="/index/bricks-2181920_1280.jpg"
+              alt="Yrkeshögskolan klassrum"
+          /></a>
+          <section class="content">
+            <h2>
+              <a href="/Verksamhetsomraden/Yrkeshogskolan/"
+                >Yrkeshögskolan <i class="icon-gl-chevron-right"></i
+              ></a>
+            </h2>
 
-      <div class="card">
-        <a href="/Verksamhetsomraden/Konst--och-kulturutbildningar/"><img src="abstract-1867838_640.jpg"
-            alt="Konst- och kulturutbildningar" /></a>
-        <section class="content">
-          <h2>
-            <a href="/Verksamhetsomraden/Konst--och-kulturutbildningar/">Konst- och kulturutbildningar<i
-                class="icon-gl-chevron-right"></i></a>
-          </h2>
+            <p>
+              Utbildningar som svarar mot arbetslivets behov av kvalificerad
+              yrkeskompetens och som drivs i nära samverkan med företag och
+              andra arbetsgivare.
+            </p>
+          </section>
+        </div>
 
-          <p>
-            Utbildningar som är högskoleförberedande, yrkesinriktade eller
-            inom kulturarvsområdet och drivs av privata utbildningsanordnare.
-          </p>
-        </section>
+        <div class="card">
+          <a href="/Verksamhetsomraden/Konst--och-kulturutbildningar/"
+            ><img
+              src="abstract-1867838_640.jpg"
+              alt="Konst- och kulturutbildningar"
+          /></a>
+          <section class="content">
+            <h2>
+              <a href="/Verksamhetsomraden/Konst--och-kulturutbildningar/"
+                >Konst- och kulturutbildningar<i
+                  class="icon-gl-chevron-right"
+                ></i
+              ></a>
+            </h2>
+
+            <p>
+              Utbildningar som är högskoleförberedande, yrkesinriktade eller
+              inom kulturarvsområdet och drivs av privata utbildningsanordnare.
+            </p>
+          </section>
+        </div>
+
+        <div class="card">
+          <a href="/Verksamhetsomraden/Tolkutbildningar/"
+            ><img src="people-2567915_640.jpg" alt="Tolkutbildningar"
+          /></a>
+          <section class="content">
+            <h2>
+              <a href="/Verksamhetsomraden/Tolkutbildningar/"
+                >Tolkutbildningar</a
+              >
+            </h2>
+
+            <p>
+              Utbildningar till kontakttolk, teckenspråks- och dövblindtolk samt
+              skrivtolk som drivs av folkhögskolor och studieförbund.<br /><br />
+            </p>
+          </section>
+        </div>
+
+        <div class="card">
+          <a href="/Verksamhetsomraden/Utbildningar-med-endast-tillsyn/"
+            ><img
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FMYH-startbilder%2FET-start.png&width=284&height=204&method=Crop"
+              alt="Ulrika Kestere/Simple Scandinav"
+          /></a>
+          <section class="content">
+            <h2>
+              <a href="/Verksamhetsomraden/Utbildningar-med-endast-tillsyn/"
+                >Utbildningar med endast tillsyn</a
+              >
+            </h2>
+
+            <p>
+              Eftergymnasiala utbildningar inom olika områden som bedrivs av
+              fristående skolor. Utbildningarnas statliga stöd omfattas endast
+              av tillsyn.
+            </p>
+          </section>
+        </div>
+
+        <div class="card">
+          <a href="/Verksamhetsomraden/SeQF/"
+            ><img
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FIllustrationer%2FSEQF.png&width=284&height=204&method=Crop"
+              alt=""
+          /></a>
+          <section class="content">
+            <h2><a href="/Verksamhetsomraden/SeQF/">SeQF</a></h2>
+
+            <p>
+              Sveriges referensram för kvalifikationer (SeQF) ska synliggöra
+              allt lärande för att öka matchningen på arbetsmarknaden.
+              <br /><br />
+            </p>
+          </section>
+        </div>
+
+        <div class="card">
+          <a href="/Verksamhetsomraden/Validering1/"
+            ><img
+              src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FScandinav%2FScandinav_royaltyfria%2FScandinav_41YW_validering_webb.jpg&width=284&height=204&method=Crop"
+              alt=""
+          /></a>
+          <section class="content">
+            <h2>
+              <a href="/Verksamhetsomraden/Validering1/">Om validering</a>
+            </h2>
+
+            <p>
+              Validering innebär att en persons kunskaper och kompetenser
+              kartläggs och bedöms på ett strukturerat sätt, för studier eller
+              arbete, oavsett hur, var eller när de förvärvats.
+            </p>
+          </section>
+        </div>
       </div>
+    </main>
 
-      <div class="card">
-        <a href="/Verksamhetsomraden/Tolkutbildningar/"><img src="people-2567915_640.jpg" alt="Tolkutbildningar" /></a>
-        <section class="content">
-          <h2>
-            <a href="/Verksamhetsomraden/Tolkutbildningar/">Tolkutbildningar</a>
-          </h2>
-
-          <p>
-            Utbildningar till kontakttolk, teckenspråks- och dövblindtolk samt
-            skrivtolk som drivs av folkhögskolor och studieförbund.<br /><br />
-          </p>
-        </section>
-      </div>
-
-      <div class="card">
-        <a href="/Verksamhetsomraden/Utbildningar-med-endast-tillsyn/"><img
-            src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FMYH-startbilder%2FET-start.png&width=284&height=204&method=Crop"
-            alt="Ulrika Kestere/Simple Scandinav" /></a>
-        <section class="content">
-          <h2>
-            <a href="/Verksamhetsomraden/Utbildningar-med-endast-tillsyn/">Utbildningar med endast tillsyn</a>
-          </h2>
-
-          <p>
-            Eftergymnasiala utbildningar inom olika områden som bedrivs av
-            fristående skolor. Utbildningarnas statliga stöd omfattas endast
-            av tillsyn.
-          </p>
-        </section>
-      </div>
-
-      <div class="card">
-        <a href="/Verksamhetsomraden/SeQF/"><img
-            src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FIllustrationer%2FSEQF.png&width=284&height=204&method=Crop"
-            alt="" /></a>
-        <section class="content">
-          <h2><a href="/Verksamhetsomraden/SeQF/">SeQF</a></h2>
-
-          <p>
-            Sveriges referensram för kvalifikationer (SeQF) ska synliggöra
-            allt lärande för att öka matchningen på arbetsmarknaden.
-            <br /><br />
-          </p>
-        </section>
-      </div>
-
-      <div class="card">
-        <a href="/Verksamhetsomraden/Validering1/"><img
-            src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FBildbank%2FScandinav%2FScandinav_royaltyfria%2FScandinav_41YW_validering_webb.jpg&width=284&height=204&method=Crop"
-            alt="" /></a>
-        <section class="content">
-          <h2>
-            <a href="/Verksamhetsomraden/Validering1/">Om validering</a>
-          </h2>
-
-          <p>
-            Validering innebär att en persons kunskaper och kompetenser
-            kartläggs och bedöms på ett strukturerat sätt, för studier eller
-            arbete, oavsett hur, var eller när de förvärvats.
-          </p>
-        </section>
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <section class="kontakt-list">
-      <h3>Kontakt</h3>
-      <ul>
-        <li>
-          <h4>Digitalt kundforum</h4>
-          <p>
-            Har du en fråga? Besök vårt kundforum,
-            <a href="#">forum.myh.se</a>
-          </p>
-        </li>
-        <li>
-          <h4>Telefon</h4>
-          <p>
-            Ring vår växel
-            <a href="tel:010-2090100"> 010-209 01 00</a>. Växeln är öppen
-            vardagar 9.00 - 11.30, 13.00 - 15.00
-          </p>
-        </li>
-        <li>
-          <h4>Press</h4>
-          <p>
-            Presskontakter och pressmeddelanden finns i vårt
-            <a href="nyhetsrum.html">nyhetsrum</a>
-          </p>
-        </li>
-        <li>
-          <h4>E-post</h4>
-          <p>
-            Allmänna frågor / synpunkter:
-            <a href="mailto:info@myh.se">info@myh.se</a>
-            <br />
-            Registrator:
-            <a href="mailto:registrator@myh.se">registrator@myh.se</a>
-          </p>
-        </li>
-        <li>
-          <h4>Adress</h4>
-          <p>
-            Myndigheten för yrkeshögskolan <br />
-            Box 145 <br />
-            721 05 Västerås
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section class="about-list-footer">
-      <h3>Om webbplatsen</h3>
-      <ul class="page-nav">
-        <li><a href="#">Använda webbplatsen</a></li>
-        <li><a href="#">Om webbkakor (cookies)</a></li>
-        <li><a href="#">Webbkarta</a></li>
-        <li><a href="#">Tillgänglighetsredogörelse</a></li>
-      </ul>
-      <h3>Våra övriga webbplatser</h3>
-      <ul class="page-nav">
-        <li><a href="#">www.yrkeshogskolan.se</a></li>
-        <li><a href="#">www.konstkulturutbildning.se</a></li>
-        <li><a href="#">www.blitolk.nu</a></li>
-        <li><a href="#">www.seqf.se</a></li>
-      </ul>
-      <h3>Håll dig informerad</h3>
-      <h4>
-        <a><i class="fa fa-youtube"></i> Youtube</a>
-      </h4>
-      <h4>Ansvarig utgivare</h4>
-      <p>Thomas Persson, generaldirektör MYH.</p>
-    </section>
-  </footer>
-</body>
-
+    <footer class="footer">
+      <section class="kontakt-list">
+        <h3>Kontakt</h3>
+        <ul>
+          <li>
+            <h4>Digitalt kundforum</h4>
+            <p>
+              Har du en fråga? Besök vårt kundforum,
+              <a href="#">forum.myh.se</a>
+            </p>
+          </li>
+          <li>
+            <h4>Telefon</h4>
+            <p>
+              Ring vår växel
+              <a href="tel:010-2090100"> 010-209 01 00</a>. Växeln är öppen
+              vardagar 9.00 - 11.30, 13.00 - 15.00
+            </p>
+          </li>
+          <li>
+            <h4>Press</h4>
+            <p>
+              Presskontakter och pressmeddelanden finns i vårt
+              <a href="nyhetsrum.html">nyhetsrum</a>
+            </p>
+          </li>
+          <li>
+            <h4>E-post</h4>
+            <p>
+              Allmänna frågor / synpunkter:
+              <a href="mailto:info@myh.se">info@myh.se</a>
+              <br />
+              Registrator:
+              <a href="mailto:registrator@myh.se">registrator@myh.se</a>
+            </p>
+          </li>
+          <li>
+            <h4>Adress</h4>
+            <p>
+              Myndigheten för yrkeshögskolan <br />
+              Box 145 <br />
+              721 05 Västerås
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="about-list-footer">
+        <h3>Om webbplatsen</h3>
+        <ul class="page-nav">
+          <li><a href="#">Använda webbplatsen</a></li>
+          <li><a href="#">Om webbkakor (cookies)</a></li>
+          <li><a href="#">Webbkarta</a></li>
+          <li><a href="#">Tillgänglighetsredogörelse</a></li>
+        </ul>
+        <h3>Våra övriga webbplatser</h3>
+        <ul class="page-nav">
+          <li><a href="#">www.yrkeshogskolan.se</a></li>
+          <li><a href="#">www.konstkulturutbildning.se</a></li>
+          <li><a href="#">www.blitolk.nu</a></li>
+          <li><a href="#">www.seqf.se</a></li>
+        </ul>
+        <h3>Håll dig informerad</h3>
+        <h4>
+          <a><i class="fa fa-youtube"></i> Youtube</a>
+        </h4>
+        <h4>Ansvarig utgivare</h4>
+        <p>Thomas Persson, generaldirektör MYH.</p>
+      </section>
+    </footer>
+  </body>
 </html>
