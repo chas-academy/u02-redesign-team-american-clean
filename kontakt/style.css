@@ -26,6 +26,7 @@ textarea {
 .formFlexItem{
   margin:5px;
 }
+
 @media screen and (min-width: 801px) {
   .twoByTwo {
     display: flex;
@@ -45,6 +46,10 @@ textarea {
     margin-top: 20%;
     margin-bottom: 20%;
   }
+  .mapDimen{
+    width:90%;
+    height:70vh;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -62,6 +67,10 @@ textarea {
   }
   .button {
     margin-bottom: 1vh;
+  }
+  .mapDimen{
+    width:65%;
+    height:50vh;
   }
 }
 
