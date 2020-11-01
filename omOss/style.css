@@ -29,6 +29,10 @@ main {
   text-decoration: none;
 }
 
+.img-container {
+  margin-bottom: 20px;
+}
+
 .col-2-3.card {
   margin: 1em;
   padding: 1em;
