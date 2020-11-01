@@ -1,77 +1,95 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MYH.se | Lagar, regler och tillsyn</title>
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/templates/header/headerStyle.css" />
-  <link rel="stylesheet" href="/templates/footer/footer.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/061e52cdfe.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MYH.se | Lagar, regler och tillsyn</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/templates/header/headerStyle.css" />
+    <link rel="stylesheet" href="/templates/footer/footer.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/061e52cdfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  <!--header, banner and breadcrumbs-->
-  <!---->
-  <header class="topHeader">
-    <a href="/index/index.html" aria-label="Till startsidan">
-      <img id="biglogo" src="/templates/header/myh_logo_white_big_shaded.png" alt="myh.se" />
-      <img id="smalllogo" src="/templates/header/myh_logo_white_big_shaded_small.png" alt="myh.se" />
-    </a>
+  <body>
+    <!--header, banner and breadcrumbs-->
+    <!---->
+    <header class="topHeader">
+      <a href="/index/index.html" aria-label="Till startsidan">
+        <img
+          id="biglogo"
+          src="/templates/header/myh_logo_white_big_shaded.png"
+          alt="myh.se"
+        />
+        <img
+          id="smalllogo"
+          src="/templates/header/myh_logo_white_big_shaded_small.png"
+          alt="myh.se"
+        />
+      </a>
 
-    <nav aria-label="Huvudmeny">
-      <label for="ham-check" id="hamburger">&#9776;</label>
-      <input type="checkbox" name="ham-check" id="ham-check" />
-      <ul class="navSticky">
-        <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
-        <li class="navItem">
-          <a href="/verksamhetsOmraden/verksamhetsOmraden.html">Verksamhetsområden</a>
-        </li>
-        <li class="navItem">
-          <a href="/lagarReglerTillsyn/lagarReglerTillsyn.html" class="currentPage">Lagar, Regler, Tillsyn</a>
-        </li>
-        <li class="navItem">
-          <a href="/statistik/statistik.html">Statistik</a>
-        </li>
-        <li class="navItem">
-          <a href="/publikationer/publikationer.html">Publikationer</a>
-        </li>
-        <li class="navItem">
-          <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
-        </li>
-        <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div role="banner" id="banner">
-    <nav aria-label="Sekundärmeny">
-      <ul>
-        <li>
-          <a aria-label="View this site in English" href="#">In English</a>
-        </li>
-        <li><a href="#">Lättläst</a></li>
-        <li><a href="#">Anpassa</a></li>
-        <li><a href="#">Mina sidor</a></li>
-      </ul>
-    </nav>
-    <form>
-      <label for="searchField">Sök</label>
-      <input type="search" id="searchField" aria-label="Ange söktext här" placeholder="Sök på webbplatsen" />
+      <nav aria-label="Huvudmeny">
+        <label for="ham-check" id="hamburger">&#9776;</label>
+        <input type="checkbox" name="ham-check" id="ham-check" />
+        <ul class="navSticky">
+          <li class="navItem"><a href="/omOss/omOss.html">Om oss</a></li>
+          <li class="navItem">
+            <a href="/verksamhetsOmraden/verksamhetsOmraden.html"
+              >Verksamhetsområden</a
+            >
+          </li>
+          <li class="navItem">
+            <a
+              href="/lagarReglerTillsyn/lagarReglerTillsyn.html"
+              class="currentPage"
+              >Lagar, Regler, Tillsyn</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="/statistik/statistik.html">Statistik</a>
+          </li>
+          <li class="navItem">
+            <a href="/publikationer/publikationer.html">Publikationer</a>
+          </li>
+          <li class="navItem">
+            <a href="/nyhetsRum/nyhetsRum.html">Nyhetsrum</a>
+          </li>
+          <li class="navItem"><a href="/kontakt/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div role="banner" id="banner">
+      <nav aria-label="Sekundärmeny">
+        <ul>
+          <li>
+            <a aria-label="View this site in English" href="#">In English</a>
+          </li>
+          <li><a href="#">Lättläst</a></li>
+          <li><a href="#">Anpassa</a></li>
+          <li><a href="#">Mina sidor</a></li>
+        </ul>
+      </nav>
+      <form>
+        <label for="searchField">Sök</label>
+        <input
+          type="search"
+          id="searchField"
+          aria-label="Ange söktext här"
+          placeholder="Sök på webbplatsen"
+        />
 
-      <button type="submit" aria-label="Klicka här för att söka" class="button"><i class="fas fa-search"></i>
-        Sök
-      </button>
-    </form>
-  </div>
-  <!--content below-->
-  <main class="grid gap">
-
-    <button type="submit" aria-label="Klicka här för att söka" class="button">
-      <i class="fas fa-search"></i>
-      Sök
-    </button>
-    </form>
+        <button
+          type="submit"
+          aria-label="Klicka här för att söka"
+          class="button"
+        >
+          <i class="fas fa-search"></i>
+          Sök
+        </button>
+      </form>
     </div>
     <!--content below-->
     <main class="grid gap">
@@ -84,7 +102,8 @@
         <div class="img-container">
           <img
             src="https://www.myh.se/ServeImage.aspx?image=%2FGlobal%2FIllustrationer%2FParagraf.png&width=584&height=0&method=Box"
-            alt="Lag-symbol" />
+            alt="Lag-symbol"
+          />
         </div>
         <p>
           För alla utbildningsformer finns det lagar och andra bestämmelser som
@@ -205,6 +224,5 @@
         <p>Thomas Persson, generaldirektör MYH.</p>
       </section>
     </footer>
-</body>
-
+  </body>
 </html>
