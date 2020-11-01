@@ -1,5 +1,6 @@
 $padding-horiz: 0.5vw 0.8vw 0.15vw 0.8vw;
 
+// this is the container for the entire header
 .topHeader {
   top: 0;
   left: 0;
@@ -29,7 +30,6 @@ $padding-horiz: 0.5vw 0.8vw 0.15vw 0.8vw;
   justify-content: center;
   align-items: center;
   color: white;
-  /*padding: 2vw;*/
   width: 100vw;
   height: 75px;
 }
@@ -111,14 +111,15 @@ a.currentPage {
     }
   }
 }
-.bigbody {
-  border: 1px solid black;
-  height: 150vh;
-  width: 90vw;
-  margin: 10vh 0px 0px 0px;
-  text-align: center;
-  display: inline-block;
-}
+// this is for testing purposes
+// .bigbody {
+//   border: 1px solid black;
+//   height: 150vh;
+//   width: 90vw;
+//   margin: 10vh 0px 0px 0px;
+//   text-align: center;
+//   display: inline-block;
+// }
 #hamburger,
 #ham-check {
   display: none;
