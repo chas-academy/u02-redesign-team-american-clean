@@ -28,7 +28,7 @@ article {
 }
 .current-events {
   grid-area: current;
-  section {
+  div {
     width: 100%;
     margin: 0 auto;
     display: grid;
@@ -153,15 +153,15 @@ main.grid {
 }
 
 @media only screen and (max-width: 1199px) {
-  .calendar.card section {
+  .calendar.card div {
     flex-direction: row;
     justify-content: center;
   }
-  div.current-events.card {
+  section.current-events.card {
     min-width: 85vw;
     margin: 1em 0; //unfortunate
   }
-  .current-events > section {
+  .current-events > div {
     grid-template-columns: 1fr;
     min-width: 80vw;
   }

@@ -43,7 +43,7 @@ article h4 {
   grid-area: current;
 }
 
-.current-events section {
+.current-events div {
   width: 100%;
   margin: 0 auto;
   display: -ms-grid;
@@ -229,7 +229,7 @@ main.grid {
 }
 
 @media only screen and (max-width: 1199px) {
-  .calendar.card section {
+  .calendar.card div {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -238,11 +238,11 @@ main.grid {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  div.current-events.card {
+  section.current-events.card {
     min-width: 85vw;
     margin: 1em 0;
   }
-  .current-events > section {
+  .current-events > div {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     min-width: 80vw;
