@@ -2,6 +2,7 @@
 .button {
   display: inline-block;
   background: #3c3c3b;
+  border: 0;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -25,6 +26,10 @@
 
 .button.primary:hover {
   background: #00953a;
+}
+
+label[for="searchField"] {
+  visibility: hidden;
 }
 
 .img-container {

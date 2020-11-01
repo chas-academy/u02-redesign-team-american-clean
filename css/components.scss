@@ -7,6 +7,7 @@ $btn-font-color: #fff;
 .button {
   display: inline-block;
   background: $btn-default;
+  border: 0;
   color: $btn-font-color;
   text-align: center;
   text-decoration: none;
@@ -29,6 +30,10 @@ $btn-font-color: #fff;
   &:hover {
     background: darken($color: $btn-primary, $amount: 10%);
   }
+}
+
+label[for="searchField"] {
+  visibility: hidden;
 }
 
 .img-container {
