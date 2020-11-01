@@ -9,7 +9,7 @@ main {
   color: white;
   padding: 1em;
   max-height: 450px;
-  margin: 1em 1em 1em 1em;
+  margin: 1em 1em 1em 0;
   max-width: 50%;
   min-width: 400px;
   h2 {
@@ -62,8 +62,7 @@ main {
   border: 1px solid rgb(70, 70, 70);
   border-radius: 5px;
   width: 50%;
-  margin: 1em 0 1em 0.5em;
-  padding: 1em;
+  padding: 1em 0 1em 1em;
   font-size: 1.5em;
   min-width: 400px;
   display: inline-block;
