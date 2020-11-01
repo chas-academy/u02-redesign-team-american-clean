@@ -57,6 +57,9 @@ textarea {
     margin-left: 2.5%;
     margin-right: 2.5%;
   }
+  main{
+    width:95%;
+  }
   .icons {
     margin-top: 2vh;
   }
