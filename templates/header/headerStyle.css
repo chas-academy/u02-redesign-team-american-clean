@@ -41,7 +41,6 @@
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  /*padding: 2vw;*/
   width: 100vw;
   height: 75px;
 }
@@ -126,15 +125,6 @@ a.currentPage {
 #banner ul a {
   color: black;
   padding: 0.5vw 0.8vw 0.15vw 0.8vw;
-}
-
-.bigbody {
-  border: 1px solid black;
-  height: 150vh;
-  width: 90vw;
-  margin: 10vh 0px 0px 0px;
-  text-align: center;
-  display: inline-block;
 }
 
 #hamburger,
