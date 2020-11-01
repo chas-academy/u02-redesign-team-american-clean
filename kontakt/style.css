@@ -1,17 +1,14 @@
 body {
   text-align: center;
 }
-
 .img-container {
   max-width: 90%;
   margin: auto;
 }
-
 .verticalMargin {
   margin-bottom: 3vh;
   margin-top: 2vh;
 }
-
 textarea {
   width: 96%;
   min-height: 10vh;
@@ -20,6 +17,14 @@ textarea {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+.formFlex{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+.formFlexItem{
+  margin:5px;
 }
 @media screen and (min-width: 801px) {
   .twoByTwo {
@@ -36,10 +41,6 @@ textarea {
   #kontaktaBild {
     width: 40vw;
   }
-  /* .makeBodyMoreNarrow {
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-  } */
   .icons {
     margin-top: 20%;
     margin-bottom: 20%;
@@ -52,10 +53,6 @@ textarea {
   }
   #kontaktaBild {
     width: 70vw;
-  }
-  .makeBodyMoreNarrow {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
   }
   main {
     width: 95%;
